@@ -2,6 +2,7 @@ import { Component, Input } from "@angular/core";
 
 @Component({
   template: ``,
+  styleUrls: ["./base-loader.component.scss"],
 })
 export class BaseLoaderComponent {
   @Input()

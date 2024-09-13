@@ -6,12 +6,11 @@
   }"
 >
   <svg
+    [attr.width]="size"
+    [attr.height]="size"
+    viewBox="0 0 40 40"
     xmlns="http://www.w3.org/2000/svg"
     stroke="currentColor"
-    [ngStyle]="{
-      height: size,
-      width: size
-    }"
   >
     <g fill="none" fill-rule="evenodd">
       <g transform="translate(1 1)" stroke-width="2">
@@ -22,7 +21,7 @@
             type="rotate"
             from="0 18 18"
             to="360 18 18"
-            dur="0.8s"
+            dur="1s"
             repeatCount="indefinite"
           />
         </path>
