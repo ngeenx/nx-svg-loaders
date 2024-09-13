@@ -15,6 +15,8 @@ import {
   NxThreeDotsLoader,
 } from '@ngeenx/nx-react-svg-loaders';
 
+import './app.module.scss';
+
 export function App() {
   const sizes: number[] = [10, 15, 20, 25, 30, 25, 40, 50];
 
@@ -35,6 +37,8 @@ export function App() {
 
   return (
     <main>
+      <header>React SVG Loaders</header>
+
       {loaderTypes.map((loaderType, loaderIndex) => (
         <section
           key={loaderIndex}

@@ -1,10 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 main {
   @apply flex flex-row flex-wrap gap-2 justify-center items-stretch w-full my-auto h-screen
-    text-yellow-500;
+    text-yellow-500 pb-10;
+
+  header {
+    @apply w-full text-center text-gray-800 text-3xl font-bold mt-5;
+  }
 
   section {
     @apply flex flex-col gap-y-3 border-[1.5px] border-dashed
