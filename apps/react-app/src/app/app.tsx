@@ -10,6 +10,7 @@ import {
   NxOvalLoader,
   NxPuffLoader,
   NxRingsLoader,
+  NxSpinningCirclesLoader,
 } from '@ngeenx/nx-react-svg-loaders';
 
 export function App() {
@@ -69,10 +70,10 @@ export function App() {
                 {loaderType === 'Rings' && (
                   <NxRingsLoader isLoading={true} size={size} />
                 )}
-                {/* {loaderType === 'Spinning Circles' && (
-                  <SpinningCirclesLoader isLoading={true} size={size} />
+                {loaderType === 'Spinning Circles' && (
+                  <NxSpinningCirclesLoader isLoading={true} size={size} />
                 )}
-                {loaderType === 'Tail Spin' && (
+                {/* {loaderType === 'Tail Spin' && (
                   <TailSpinLoader isLoading={true} size={size} />
                 )}
                 {loaderType === 'Three Dots' && (
