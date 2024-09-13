@@ -1,6 +1,5 @@
 import { Component } from "@angular/core";
 import { RouterModule } from "@angular/router";
-import { NxWelcomeComponent } from "./nx-welcome.component";
 import {
   NxAudioLoaderComponent,
   NxBallTriangleLoaderComponent,
@@ -20,7 +19,6 @@ import { CommonModule } from "@angular/common";
 @Component({
   standalone: true,
   imports: [
-    NxWelcomeComponent,
     RouterModule,
     CommonModule,
 
