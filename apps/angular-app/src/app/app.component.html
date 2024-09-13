@@ -20,4 +20,15 @@
     />
     }
   </section>
+
+  <!-- Audio Loader -->
+  <section class="flex flex-row gap-5 justify-center p-4 items-center">
+    @for (size of sizes; track $index) {
+    <nx-angular-svg-ball-triangle-loader
+      [centered]="true"
+      [isLoading]="true"
+      [size]="size"
+    />
+    }
+  </section>
 </main>
