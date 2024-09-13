@@ -1,6 +1,9 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from 'react';
-import { NxAudioLoader } from '@ngeenx/nx-react-svg-loaders';
+import {
+  NxAudioLoader,
+  NxBallTriangleLoader,
+} from '@ngeenx/nx-react-svg-loaders';
 
 export function App() {
   const sizes: number[] = [10, 15, 20, 25, 30, 25, 40, 50];
@@ -35,10 +38,10 @@ export function App() {
                 {loaderType === 'Audio' && (
                   <NxAudioLoader isLoading={true} size={size} />
                 )}
-                {/* {loaderType === 'Ball Triangle' && (
-                  <BallTriangleLoader isLoading={true} size={size} />
+                {loaderType === 'Ball Triangle' && (
+                  <NxBallTriangleLoader isLoading={true} size={size} />
                 )}
-                {loaderType === 'Bars' && (
+                {/* {loaderType === 'Bars' && (
                   <BarsLoader isLoading={true} size={size} />
                 )}
                 {loaderType === 'Circles' && (
