@@ -12,6 +12,7 @@ import {
   NxPuffLoaderComponent,
   NxRingsLoaderComponent,
   NxSpinningCirclesLoaderComponent,
+  NxTailSpinLoaderComponent,
 } from "@ngeenx/nx-angular-svg-loaders";
 
 @Component({
@@ -32,6 +33,7 @@ import {
     NxPuffLoaderComponent,
     NxRingsLoaderComponent,
     NxSpinningCirclesLoaderComponent,
+    NxTailSpinLoaderComponent,
   ],
   selector: "app-root",
   templateUrl: "./app.component.html",

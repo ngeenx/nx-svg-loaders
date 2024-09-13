@@ -111,4 +111,15 @@
       }
     </div>
   </section>
+
+  <!-- Tail Spin Loader -->
+  <section class="flex flex-row gap-5 justify-center p-4 items-center">
+    <h1>Tail Spin Loaders</h1>
+
+    <div>
+      @for (size of sizes; track $index) {
+      <nx-angular-svg-tail-spin-loader [isLoading]="true" [size]="size" />
+      }
+    </div>
+  </section>
 </main>
