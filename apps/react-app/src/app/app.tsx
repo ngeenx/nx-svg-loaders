@@ -12,6 +12,7 @@ import {
   NxRingsLoader,
   NxSpinningCirclesLoader,
   NxTailSpinLoader,
+  NxThreeDotsLoader,
 } from '@ngeenx/nx-react-svg-loaders';
 
 export function App() {
@@ -77,9 +78,9 @@ export function App() {
                 {loaderType === 'Tail Spin' && (
                   <NxTailSpinLoader isLoading={true} size={size} />
                 )}
-                {/* {loaderType === 'Three Dots' && (
-                  <ThreeDotsLoader isLoading={true} size={size} />
-                )} */}
+                {loaderType === 'Three Dots' && (
+                  <NxThreeDotsLoader isLoading={true} size={size} />
+                )}
               </React.Fragment>
             ))}
           </div>
