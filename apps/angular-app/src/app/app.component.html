@@ -1,1 +1,9 @@
+<section class="flex flex-row w-full border-2 border-dashed border-gray-500 m-10 p-4 rounded-lg">
+  <div class="flex flex-row gap-5 justify-center p-4 items-center">
+    @for (size of sizes; track $index) {
+      <nx-angular-svg-oval-loader [centered]="true" [isLoading]="true" [size]="size"/>
+    }
+  </div>
+</section>
+
 <app-nx-welcome></app-nx-welcome> <router-outlet></router-outlet>

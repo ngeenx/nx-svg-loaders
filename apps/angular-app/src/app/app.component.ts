@@ -1,14 +1,17 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { Component } from "@angular/core";
+import { RouterModule } from "@angular/router";
+import { NxWelcomeComponent } from "./nx-welcome.component";
+import { OvalLoaderComponent } from "@ngeenx/nx-angular-svg-loaders";
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  imports: [NxWelcomeComponent, RouterModule, OvalLoaderComponent],
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.scss",
 })
 export class AppComponent {
-  title = 'angular-app';
+  title = "angular-app";
+
+  public sizes: number[] = [10, 20, 30, 40, 50, 70, 90, 110];
 }
