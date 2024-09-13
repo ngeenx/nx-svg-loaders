@@ -3,6 +3,7 @@ import { Component, Input } from "@angular/core";
 @Component({
   template: ``,
   styleUrls: ["./base-loader.component.scss"],
+  standalone: true,
 })
 export class NxBaseLoaderComponent {
   @Input()
