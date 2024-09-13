@@ -64,4 +64,15 @@
       }
     </div>
   </section>
+
+  <!-- Heart Loader -->
+  <section class="flex flex-row gap-5 justify-center p-4 items-center">
+    <h1>Heart Loaders</h1>
+
+    <div>
+      @for (size of sizes; track $index) {
+      <nx-angular-svg-hearts-loader [isLoading]="true" [size]="size" />
+      }
+    </div>
+  </section>
 </main>
