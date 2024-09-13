@@ -1,136 +1,74 @@
 <main>
-  <!-- Oval Loader -->
+  @for (loaderType of loaderTypes; track $index) {
   <section class="flex flex-row gap-5 justify-center p-4 items-center">
-    <h1>Oval Loaders</h1>
+    <h1>{{ loaderType }} Loaders</h1>
 
     <div>
       @for (size of sizes; track $index) {
-      <nx-angular-svg-oval-loader [isLoading]="true" [size]="size" />
+      <ng-container [ngSwitch]="loaderType">
+        <nx-angular-svg-audio-loader
+          *ngSwitchCase="'Audio'"
+          [isLoading]="true"
+          [size]="size"
+        />
+        <nx-angular-svg-ball-triangle-loader
+          *ngSwitchCase="'Ball Triangle'"
+          [isLoading]="true"
+          [size]="size"
+        />
+        <nx-angular-svg-bars-loader
+          *ngSwitchCase="'Bars'"
+          [isLoading]="true"
+          [size]="size"
+        />
+        <nx-angular-svg-circles-loader
+          *ngSwitchCase="'Circles'"
+          [isLoading]="true"
+          [size]="size"
+        />
+        <nx-angular-svg-grid-loader
+          *ngSwitchCase="'Grid'"
+          [isLoading]="true"
+          [size]="size"
+        />
+        <nx-angular-svg-hearts-loader
+          *ngSwitchCase="'Heart'"
+          [isLoading]="true"
+          [size]="size"
+        />
+        <nx-angular-svg-oval-loader
+          *ngSwitchCase="'Oval'"
+          [isLoading]="true"
+          [size]="size"
+        />
+        <nx-angular-svg-puff-loader
+          *ngSwitchCase="'Puff'"
+          [isLoading]="true"
+          [size]="size"
+        />
+        <nx-angular-svg-rings-loader
+          *ngSwitchCase="'Rings'"
+          [isLoading]="true"
+          [size]="size"
+        />
+        <nx-angular-svg-spinning-circles-loader
+          *ngSwitchCase="'Spinning Circles'"
+          [isLoading]="true"
+          [size]="size"
+        />
+        <nx-angular-svg-tail-spin-loader
+          *ngSwitchCase="'Tail Spin'"
+          [isLoading]="true"
+          [size]="size"
+        />
+        <nx-angular-svg-three-dots-loader
+          *ngSwitchCase="'Three Dots'"
+          [isLoading]="true"
+          [size]="size"
+        />
+      </ng-container>
       }
     </div>
   </section>
-
-  <!-- Audio Loader -->
-  <section class="flex flex-row gap-5 justify-center p-4 items-center">
-    <h1>Audio Loaders</h1>
-
-    <div>
-      @for (size of sizes; track $index) {
-      <nx-angular-svg-audio-loader [isLoading]="true" [size]="size" />
-      }
-    </div>
-  </section>
-
-  <!-- Ball Triangle Loader -->
-  <section class="flex flex-row gap-5 justify-center p-4 items-center">
-    <h1>Ball Triangle Loaders</h1>
-
-    <div>
-      @for (size of sizes; track $index) {
-      <nx-angular-svg-ball-triangle-loader [isLoading]="true" [size]="size" />
-      }
-    </div>
-  </section>
-
-  <!-- Bars Loader -->
-  <section class="flex flex-row gap-5 justify-center p-4 items-center">
-    <h1>Bars Loaders</h1>
-
-    <div>
-      @for (size of sizes; track $index) {
-      <nx-angular-svg-bars-loader [isLoading]="true" [size]="size" />
-      }
-    </div>
-  </section>
-
-  <!-- Circles Loader -->
-  <section class="flex flex-row gap-5 justify-center p-4 items-center">
-    <h1>Circles Loaders</h1>
-
-    <div>
-      @for (size of sizes; track $index) {
-      <nx-angular-svg-circles-loader [isLoading]="true" [size]="size" />
-      }
-    </div>
-  </section>
-
-  <!-- Grid Loader -->
-  <section class="flex flex-row gap-5 justify-center p-4 items-center">
-    <h1>Grid Loaders</h1>
-
-    <div>
-      @for (size of sizes; track $index) {
-      <nx-angular-svg-grid-loader [isLoading]="true" [size]="size" />
-      }
-    </div>
-  </section>
-
-  <!-- Heart Loader -->
-  <section class="flex flex-row gap-5 justify-center p-4 items-center">
-    <h1>Heart Loaders</h1>
-
-    <div>
-      @for (size of sizes; track $index) {
-      <nx-angular-svg-hearts-loader [isLoading]="true" [size]="size" />
-      }
-    </div>
-  </section>
-
-  <!-- Puff Loader -->
-  <section class="flex flex-row gap-5 justify-center p-4 items-center">
-    <h1>Puff Loaders</h1>
-
-    <div>
-      @for (size of sizes; track $index) {
-      <nx-angular-svg-puff-loader [isLoading]="true" [size]="size" />
-      }
-    </div>
-  </section>
-
-  <!-- Rings Loader -->
-  <section class="flex flex-row gap-5 justify-center p-4 items-center">
-    <h1>Rings Loaders</h1>
-
-    <div>
-      @for (size of sizes; track $index) {
-      <nx-angular-svg-rings-loader [isLoading]="true" [size]="size" />
-      }
-    </div>
-  </section>
-
-  <!-- Spinning Circles Loader -->
-  <section class="flex flex-row gap-5 justify-center p-4 items-center">
-    <h1>Spinning Circles Loaders</h1>
-
-    <div>
-      @for (size of sizes; track $index) {
-      <nx-angular-svg-spinning-circles-loader
-        [isLoading]="true"
-        [size]="size"
-      />
-      }
-    </div>
-  </section>
-
-  <!-- Tail Spin Loader -->
-  <section class="flex flex-row gap-5 justify-center p-4 items-center">
-    <h1>Tail Spin Loaders</h1>
-
-    <div>
-      @for (size of sizes; track $index) {
-      <nx-angular-svg-tail-spin-loader [isLoading]="true" [size]="size" />
-      }
-    </div>
-  </section>
-
-  <!-- Three Dots Loader -->
-  <section class="flex flex-row gap-5 justify-center p-4 items-center">
-    <h1>Three Dots Loaders</h1>
-
-    <div>
-      @for (size of sizes; track $index) {
-      <nx-angular-svg-three-dots-loader [isLoading]="true" [size]="size" />
-      }
-    </div>
-  </section>
+  }
 </main>

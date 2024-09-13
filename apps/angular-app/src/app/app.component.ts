@@ -15,12 +15,14 @@ import {
   NxTailSpinLoaderComponent,
   NxThreeDotsLoaderComponent,
 } from "@ngeenx/nx-angular-svg-loaders";
+import { CommonModule } from "@angular/common";
 
 @Component({
   standalone: true,
   imports: [
     NxWelcomeComponent,
     RouterModule,
+    CommonModule,
 
     // SVG loader components
     NxOvalLoaderComponent,
@@ -43,4 +45,19 @@ import {
 })
 export class AppComponent {
   public sizes: number[] = [10, 15, 20, 25, 30, 25, 40, 50];
+
+  public loaderTypes: string[] = [
+    "Oval",
+    "Audio",
+    "Ball Triangle",
+    "Bars",
+    "Circles",
+    "Grid",
+    "Heart",
+    "Puff",
+    "Rings",
+    "Spinning Circles",
+    "Tail Spin",
+    "Three Dots",
+  ];
 }

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 main {
-  @apply flex flex-row flex-wrap gap-5 justify-center items-center w-full my-10
+  @apply flex flex-row flex-wrap gap-2 justify-center items-stretch w-full my-auto h-screen
     text-yellow-500;
 
   section {
@@ -16,7 +16,7 @@ main {
     }
 
     h1 {
-      @apply text-gray-900 underline underline-offset-4;
+      @apply text-gray-900 underline underline-offset-4 text-sm;
     }
 
     div {
