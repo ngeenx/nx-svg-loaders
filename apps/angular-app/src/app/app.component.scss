@@ -3,9 +3,24 @@
 @tailwind utilities;
 
 main {
-  @apply flex flex-col gap-5 justify-center items-center w-full my-10;
+  @apply flex flex-col gap-5 justify-center items-center w-full my-10
+    text-yellow-500;
 
   section {
-    @apply flex flex-row gap-3 w-[90%] border-[1.5px] border-dashed border-gray-400 p-2 rounded-lg text-yellow-500;
+    @apply flex flex-col gap-y-3 w-[90%] border-[1.5px] border-dashed
+        border-gray-400/60 p-2 rounded-lg text-center
+        transition-all duration-200 ease-in-out;
+
+    &:hover {
+      @apply border-purple-400;
+    }
+
+    h1 {
+      @apply text-gray-900 underline underline-offset-4;
+    }
+
+    div {
+      @apply flex flex-row gap-3 items-center;
+    }
   }
 }
