@@ -47,13 +47,13 @@ export class AppComponent {
   public sizes: number[] = [10, 15, 20, 25, 30, 25, 40, 50];
 
   public loaderTypes: string[] = [
-    "Oval",
     "Audio",
     "Ball Triangle",
     "Bars",
     "Circles",
     "Grid",
     "Heart",
+    "Oval",
     "Puff",
     "Rings",
     "Spinning Circles",
