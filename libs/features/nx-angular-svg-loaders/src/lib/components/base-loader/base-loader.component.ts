@@ -6,14 +6,14 @@ import { Component, Input } from "@angular/core";
 })
 export class BaseLoaderComponent {
   @Input()
-  public isLoading = false;
+  public isLoading? = false;
 
   @Input()
-  public size = 40;
+  public size? = 40;
 
   @Input()
-  public color: string | null = null;
+  public color?: string | null = null;
 
   @Input()
-  public centered = true;
+  public centered? = true;
 }

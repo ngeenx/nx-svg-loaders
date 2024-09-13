@@ -11,6 +11,8 @@ import {
   imports: [
     NxWelcomeComponent,
     RouterModule,
+
+    // SVG loader components
     OvalLoaderComponent,
     AudioLoaderComponent,
   ],
@@ -19,7 +21,5 @@ import {
   styleUrl: "./app.component.scss",
 })
 export class AppComponent {
-  title = "angular-app";
-
-  public sizes: number[] = [10, 20, 30, 40, 50, 70, 90, 110];
+  public sizes: number[] = [10, 15, 20, 25, 30, 25, 40, 50];
 }

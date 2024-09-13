@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+main {
+  @apply flex flex-col gap-5 justify-center items-center w-full my-10;
+
+  section {
+    @apply flex flex-row gap-3 w-[90%] border-[1.5px] border-dashed border-gray-400 p-2 rounded-lg text-yellow-500;
+  }
+}
