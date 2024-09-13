@@ -1,7 +1,13 @@
-<section class="flex flex-row w-full border-2 border-dashed border-gray-500 m-10 p-4 rounded-lg">
+<section class="flex flex-col gap-5 w-full border-2 border-dashed border-gray-500 m-10 p-4 rounded-lg">
   <div class="flex flex-row gap-5 justify-center p-4 items-center">
     @for (size of sizes; track $index) {
-      <nx-angular-svg-oval-loader [centered]="true" [isLoading]="true" [size]="size"/>
+      <nx-angular-svg-oval-loader [centered]="true" [isLoading]="true" [size]="size" class="text-yellow-500"/>
+    }
+  </div>
+
+  <div class="flex flex-row gap-5 justify-center p-4 items-center">
+    @for (size of sizes; track $index) {
+      <nx-angular-svg-audio-loader [centered]="true" [isLoading]="true" [size]="size" class="text-yellow-500"/>
     }
   </div>
 </section>

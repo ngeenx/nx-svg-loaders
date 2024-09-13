@@ -1,11 +1,19 @@
 import { Component } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { NxWelcomeComponent } from "./nx-welcome.component";
-import { OvalLoaderComponent } from "@ngeenx/nx-angular-svg-loaders";
+import {
+  AudioLoaderComponent,
+  OvalLoaderComponent,
+} from "@ngeenx/nx-angular-svg-loaders";
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule, OvalLoaderComponent],
+  imports: [
+    NxWelcomeComponent,
+    RouterModule,
+    OvalLoaderComponent,
+    AudioLoaderComponent,
+  ],
   selector: "app-root",
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.scss",
