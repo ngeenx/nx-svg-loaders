@@ -5,11 +5,7 @@
 
     <div>
       @for (size of sizes; track $index) {
-      <nx-angular-svg-oval-loader
-        [centered]="true"
-        [isLoading]="true"
-        [size]="size"
-      />
+      <nx-angular-svg-oval-loader [isLoading]="true" [size]="size" />
       }
     </div>
   </section>
@@ -20,11 +16,7 @@
 
     <div>
       @for (size of sizes; track $index) {
-      <nx-angular-svg-audio-loader
-        [centered]="true"
-        [isLoading]="true"
-        [size]="size"
-      />
+      <nx-angular-svg-audio-loader [isLoading]="true" [size]="size" />
       }
     </div>
   </section>
@@ -35,11 +27,18 @@
 
     <div>
       @for (size of sizes; track $index) {
-      <nx-angular-svg-ball-triangle-loader
-        [centered]="true"
-        [isLoading]="true"
-        [size]="size"
-      />
+      <nx-angular-svg-ball-triangle-loader [isLoading]="true" [size]="size" />
+      }
+    </div>
+  </section>
+
+  <!-- Bars Loader -->
+  <section class="flex flex-row gap-5 justify-center p-4 items-center">
+    <h1>Bars Loaders</h1>
+
+    <div>
+      @for (size of sizes; track $index) {
+      <nx-angular-svg-bars-loader [isLoading]="true" [size]="size" />
       }
     </div>
   </section>

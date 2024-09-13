@@ -4,6 +4,7 @@ import { NxWelcomeComponent } from "./nx-welcome.component";
 import {
   NxAudioLoaderComponent,
   NxBallTriangleLoaderComponent,
+  NxBarsLoaderComponent,
   NxOvalLoaderComponent,
 } from "@ngeenx/nx-angular-svg-loaders";
 
@@ -17,6 +18,7 @@ import {
     NxOvalLoaderComponent,
     NxAudioLoaderComponent,
     NxBallTriangleLoaderComponent,
+    NxBarsLoaderComponent,
   ],
   selector: "app-root",
   templateUrl: "./app.component.html",
