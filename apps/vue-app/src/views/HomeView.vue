@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import NxWelcome from '../app/NxWelcome.vue';
 </script>
 
 <template>
   <main>
-    <NxWelcome title="vue-app" />
+    <h1>Welcome</h1>
   </main>
 </template>
