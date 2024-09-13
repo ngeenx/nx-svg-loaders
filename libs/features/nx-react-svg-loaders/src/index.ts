@@ -4,3 +4,4 @@ export * from "./lib/components/bars-loader/bars-loader";
 export * from "./lib/components/circles-loader/circles-loader";
 export * from "./lib/components/grid-loader/grid-loader";
 export * from "./lib/components/hearts-loader/hearts-loader";
+export * from "./lib/components/oval-loader/oval-loader";
