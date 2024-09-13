@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  @apply flex flex-row flex-wrap gap-2 justify-center items-stretch w-full my-auto h-screen
+    text-yellow-500;
+
+  section {
+    @apply flex flex-col gap-y-3 border-[1.5px] border-dashed
+        border-gray-400/60 p-2 rounded-lg text-center
+        transition-all duration-200 ease-in-out;
+
+    &:hover {
+      @apply border-purple-400;
+    }
+
+    h1 {
+      @apply text-gray-900 underline underline-offset-4 text-sm;
+    }
+
+    div {
+      @apply flex flex-row gap-3 items-center;
+    }
+  }
+}
