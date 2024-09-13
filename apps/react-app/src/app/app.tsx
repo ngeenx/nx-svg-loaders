@@ -8,6 +8,7 @@ import {
   NxGridLoader,
   NxHeartsLoader,
   NxOvalLoader,
+  NxPuffLoader,
 } from '@ngeenx/nx-react-svg-loaders';
 
 export function App() {
@@ -61,10 +62,10 @@ export function App() {
                 {loaderType === 'Oval' && (
                   <NxOvalLoader isLoading={true} size={size} />
                 )}
-                {/* {loaderType === 'Puff' && (
-                  <PuffLoader isLoading={true} size={size} />
+                {loaderType === 'Puff' && (
+                  <NxPuffLoader isLoading={true} size={size} />
                 )}
-                {loaderType === 'Rings' && (
+                {/* {loaderType === 'Rings' && (
                   <RingsLoader isLoading={true} size={size} />
                 )}
                 {loaderType === 'Spinning Circles' && (
