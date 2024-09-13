@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ngeenx/nx-angular-loaders": [
+        "libs/features/nx-angular-svg-loaders/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

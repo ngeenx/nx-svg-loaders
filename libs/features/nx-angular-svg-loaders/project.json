@@ -1,0 +1,37 @@
+{
+  "name": "nx-angular-loaders",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/features/nx-angular-svg-loaders/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/features/nx-angular-svg-loaders/ng-package.json",
+        "tailwindConfig": "libs/features/nx-angular-svg-loaders/tailwind.config.js"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/features/nx-angular-svg-loaders/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/features/nx-angular-svg-loaders/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/features/nx-angular-svg-loaders/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}
