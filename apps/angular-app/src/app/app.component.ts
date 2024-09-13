@@ -9,6 +9,7 @@ import {
   NxGridLoaderComponent,
   NxHeartsLoaderComponent,
   NxOvalLoaderComponent,
+  NxPuffLoaderComponent,
 } from "@ngeenx/nx-angular-svg-loaders";
 
 @Component({
@@ -26,6 +27,7 @@ import {
     NxGridLoaderComponent,
     NxBarsLoaderComponent,
     NxHeartsLoaderComponent,
+    NxPuffLoaderComponent
   ],
   selector: "app-root",
   templateUrl: "./app.component.html",
