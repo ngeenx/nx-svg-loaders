@@ -1,5 +1,5 @@
 {
-  "name": "@ngeenx/nx-angular-loaders",
+  "name": "@ngeenx/nx-angular-svg-loaders",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^18.2.0",
