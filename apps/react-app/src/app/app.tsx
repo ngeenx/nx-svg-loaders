@@ -4,6 +4,7 @@ import {
   NxAudioLoader,
   NxBallTriangleLoader,
   NxBarsLoader,
+  NxCirclesLoader,
 } from '@ngeenx/nx-react-svg-loaders';
 
 export function App() {
@@ -45,10 +46,10 @@ export function App() {
                 {loaderType === 'Bars' && (
                   <NxBarsLoader isLoading={true} size={size} />
                 )}
-                {/* {loaderType === 'Circles' && (
-                  <CirclesLoader isLoading={true} size={size} />
+                {loaderType === 'Circles' && (
+                  <NxCirclesLoader isLoading={true} size={size} />
                 )}
-                {loaderType === 'Grid' && (
+                {/* {loaderType === 'Grid' && (
                   <GridLoader isLoading={true} size={size} />
                 )}
                 {loaderType === 'Heart' && (
