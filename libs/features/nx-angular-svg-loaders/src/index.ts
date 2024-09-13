@@ -6,3 +6,4 @@ export * from "./lib/components/circles-loader/circles-loader.component";
 export * from "./lib/components/grid-loader/grid-loader.component";
 export * from "./lib/components/hearts-loader/hearts-loader.component";
 export * from "./lib/components/puff-loader/puff-loader.component";
+export * from "./lib/components/rings-loader/rings-loader.component";
