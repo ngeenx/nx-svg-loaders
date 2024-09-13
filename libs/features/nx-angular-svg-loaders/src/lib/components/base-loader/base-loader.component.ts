@@ -4,7 +4,7 @@ import { Component, Input } from "@angular/core";
   template: ``,
   styleUrls: ["./base-loader.component.scss"],
 })
-export class BaseLoaderComponent {
+export class NxBaseLoaderComponent {
   @Input()
   public isLoading? = false;
 

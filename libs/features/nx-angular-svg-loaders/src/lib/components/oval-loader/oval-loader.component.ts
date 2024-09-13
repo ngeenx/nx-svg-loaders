@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
-import { BaseLoaderComponent } from "../base-loader/base-loader.component";
+import { NxBaseLoaderComponent } from "../base-loader/base-loader.component";
 
 @Component({
   imports: [CommonModule],
@@ -8,4 +8,4 @@ import { BaseLoaderComponent } from "../base-loader/base-loader.component";
   templateUrl: "./oval-loader.component.html",
   standalone: true,
 })
-export class OvalLoaderComponent extends BaseLoaderComponent {}
+export class NxOvalLoaderComponent extends NxBaseLoaderComponent {}

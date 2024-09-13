@@ -2,8 +2,8 @@ import { Component } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { NxWelcomeComponent } from "./nx-welcome.component";
 import {
-  AudioLoaderComponent,
-  OvalLoaderComponent,
+  NxAudioLoaderComponent,
+  NxOvalLoaderComponent,
 } from "@ngeenx/nx-angular-svg-loaders";
 
 @Component({
@@ -13,8 +13,8 @@ import {
     RouterModule,
 
     // SVG loader components
-    OvalLoaderComponent,
-    AudioLoaderComponent,
+    NxOvalLoaderComponent,
+    NxAudioLoaderComponent,
   ],
   selector: "app-root",
   templateUrl: "./app.component.html",
