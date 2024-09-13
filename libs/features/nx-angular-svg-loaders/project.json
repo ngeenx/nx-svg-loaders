@@ -2,7 +2,7 @@
   "name": "nx-angular-loaders",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/features/nx-angular-svg-loaders/src",
-  "prefix": "lib",
+  "prefix": "nx-angular",
   "projectType": "library",
   "tags": [],
   "targets": {
