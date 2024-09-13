@@ -8,3 +8,4 @@ export * from "./lib/components/oval-loader/oval-loader";
 export * from "./lib/components/puff-loader/puff-loader";
 export * from "./lib/components/rings-loader/rings-loader";
 export * from "./lib/components/spinning-circles-loader/spinning-circles-loader";
+export * from "./lib/components/tail-spin-loader/tail-spin-loader";
