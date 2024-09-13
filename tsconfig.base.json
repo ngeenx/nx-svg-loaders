@@ -17,6 +17,9 @@
     "paths": {
       "@ngeenx/nx-angular-svg-loaders": [
         "libs/features/nx-angular-svg-loaders/src/index.ts"
+      ],
+      "@ngeenx/nx-react-svg-loaders": [
+        "libs/features/nx-react-svg-loaders/src/index.ts"
       ]
     }
   },
