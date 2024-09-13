@@ -122,4 +122,15 @@
       }
     </div>
   </section>
+
+  <!-- Three Dots Loader -->
+  <section class="flex flex-row gap-5 justify-center p-4 items-center">
+    <h1>Three Dots Loaders</h1>
+
+    <div>
+      @for (size of sizes; track $index) {
+      <nx-angular-svg-three-dots-loader [isLoading]="true" [size]="size" />
+      }
+    </div>
+  </section>
 </main>

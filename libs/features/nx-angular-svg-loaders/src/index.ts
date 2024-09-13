@@ -9,3 +9,4 @@ export * from "./lib/components/puff-loader/puff-loader.component";
 export * from "./lib/components/rings-loader/rings-loader.component";
 export * from "./lib/components/spinning-circles-loader/spinning-circles-loader.component";
 export * from "./lib/components/tail-spin-loader/tail-spin-loader.component";
+export * from "./lib/components/three-dots-loader/three-dots-loader.component";
