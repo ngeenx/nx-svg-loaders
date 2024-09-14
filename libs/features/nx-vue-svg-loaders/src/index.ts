@@ -23,3 +23,6 @@ export { NxOvalLoader };
 
 import NxPuffLoader from "./components/puff-loader/NxPuffLoader.vue";
 export { NxPuffLoader };
+
+import NxRingsLoader from "./components/rings-loader/NxRingsLoader.vue";
+export { NxRingsLoader };
