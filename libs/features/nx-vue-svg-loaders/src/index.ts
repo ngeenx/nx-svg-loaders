@@ -32,3 +32,6 @@ export { NxSpinningCirclesLoader };
 
 import NxTailSpinLoader from "./components/tail-spin-loader/NxTailSpinLoader.vue";
 export { NxTailSpinLoader };
+
+import NxThreeDotsLoader from "./components/three-dots-loader/NxThreeDotsLoader.vue";
+export { NxThreeDotsLoader };

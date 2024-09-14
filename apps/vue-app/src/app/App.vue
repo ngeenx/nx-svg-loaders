@@ -98,13 +98,14 @@
             :size="size"
           />
         </template>
-        <!-- <NxThreeDotsLoader
-          v-if="loaderType === 'Three Dots'"
-          v-for="(size, sizeIndex) in sizes"
-          :key="sizeIndex"
-          :isLoading="true"
-          :size="size"
-        /> -->
+        <template v-if="loaderType === 'Three Dots'">
+          <NxThreeDotsLoader
+            v-for="(size, sizeIndex) in sizes"
+            :key="sizeIndex"
+            :isLoading="true"
+            :size="size"
+          />
+        </template>
       </div>
     </section>
   </main>
@@ -123,7 +124,7 @@ import {
   NxRingsLoader,
   NxSpinningCirclesLoader,
   NxTailSpinLoader,
-  // NxThreeDotsLoader,
+  NxThreeDotsLoader,
 } from '@ngeenx/nx-vue-svg-loaders';
 
 export default {
@@ -139,7 +140,7 @@ export default {
     NxRingsLoader,
     NxSpinningCirclesLoader,
     NxTailSpinLoader,
-    // NxThreeDotsLoader,
+    NxThreeDotsLoader,
   },
   data() {
     return {
