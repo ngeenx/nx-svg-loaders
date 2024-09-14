@@ -8,8 +8,8 @@
     "vue:start": "nx serve vue-app",
     "svelte:start": "nx serve svelte-app"
   },
-  "type": "module",
   "private": true,
+  "type": "module",
   "devDependencies": {
     "@angular-devkit/build-angular": "~18.2.0",
     "@angular-devkit/core": "~18.2.0",
