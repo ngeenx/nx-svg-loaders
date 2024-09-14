@@ -20,3 +20,6 @@ export { NxHeartsLoader };
 
 import NxOvalLoader from "./components/oval-loader/NxOvalLoader.vue";
 export { NxOvalLoader };
+
+import NxPuffLoader from "./components/puff-loader/NxPuffLoader.vue";
+export { NxPuffLoader };

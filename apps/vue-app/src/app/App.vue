@@ -66,14 +66,15 @@
             :size="size"
           />
         </template>
-        <!-- <NxPuffLoader
-          v-if="loaderType === 'Puff'"
-          v-for="(size, sizeIndex) in sizes"
-          :key="sizeIndex"
-          :isLoading="true"
-          :size="size"
-        />
-        <NxRingsLoader
+        <template v-if="loaderType === 'Puff'">
+          <NxPuffLoader
+            v-for="(size, sizeIndex) in sizes"
+            :key="sizeIndex"
+            :isLoading="true"
+            :size="size"
+          />
+        </template>
+        <!-- <NxRingsLoader
           v-if="loaderType === 'Rings'"
           v-for="(size, sizeIndex) in sizes"
           :key="sizeIndex"
@@ -115,7 +116,7 @@ import {
   NxGridLoader,
   NxHeartsLoader,
   NxOvalLoader,
-  // NxPuffLoader,
+  NxPuffLoader,
   // NxRingsLoader,
   // NxSpinningCirclesLoader,
   // NxTailSpinLoader,
@@ -131,7 +132,7 @@ export default {
     NxGridLoader,
     NxHeartsLoader,
     NxOvalLoader,
-    // NxPuffLoader,
+    NxPuffLoader,
     // NxRingsLoader,
     // NxSpinningCirclesLoader,
     // NxTailSpinLoader,
