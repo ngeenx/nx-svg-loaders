@@ -8,22 +8,25 @@
       class="flex flex-row items-center justify-center gap-5 p-4"
     >
       <h1>{{ loaderType }} Loaders</h1>
+
       <div>
-        <NxAudioLoader
-          v-if="loaderType === 'Audio'"
-          v-for="(size, sizeIndex) in sizes"
-          :key="sizeIndex"
-          :isLoading="true"
-          :size="size"
-        />
-        <!-- <NxBallTriangleLoader
-          v-if="loaderType === 'Ball Triangle'"
-          v-for="(size, sizeIndex) in sizes"
-          :key="sizeIndex"
-          :isLoading="true"
-          :size="size"
-        />
-        <NxBarsLoader
+        <template v-if="loaderType === 'Audio'">
+          <NxAudioLoader
+            v-for="(size, sizeIndex) in sizes"
+            :key="sizeIndex"
+            :isLoading="true"
+            :size="size"
+          />
+        </template>
+        <template v-if="loaderType === 'Ball Triangle'">
+          <NxBallTriangleLoader
+            v-for="(size, sizeIndex) in sizes"
+            :key="sizeIndex"
+            :isLoading="true"
+            :size="size"
+          />
+        </template>
+        <!-- <NxBarsLoader
           v-if="loaderType === 'Bars'"
           v-for="(size, sizeIndex) in sizes"
           :key="sizeIndex"
@@ -101,7 +104,7 @@
 <script>
 import {
   NxAudioLoader,
-  // NxBallTriangleLoader,
+  NxBallTriangleLoader,
   // NxBarsLoader,
   // NxCirclesLoader,
   // NxGridLoader,
@@ -117,7 +120,7 @@ import {
 export default {
   components: {
     NxAudioLoader,
-    // NxBallTriangleLoader,
+    NxBallTriangleLoader,
     // NxBarsLoader,
     // NxCirclesLoader,
     // NxGridLoader,
