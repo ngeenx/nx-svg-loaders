@@ -20,6 +20,9 @@
       ],
       "@ngeenx/nx-react-svg-loaders": [
         "libs/features/nx-react-svg-loaders/src/index.ts"
+      ],
+      "@ngeenx/nx-vue-svg-loaders": [
+        "libs/features/nx-vue-svg-loaders/src/index.ts"
       ]
     }
   },

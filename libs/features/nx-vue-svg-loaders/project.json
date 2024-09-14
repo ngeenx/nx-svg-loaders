@@ -1,0 +1,9 @@
+{
+  "name": "nx-vue-svg-loaders",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/features/nx-vue-svg-loaders/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project nx-vue-svg-loaders --web",
+  "targets": {}
+}
