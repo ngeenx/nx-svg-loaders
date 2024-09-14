@@ -42,14 +42,15 @@
             :size="size"
           />
         </template>
-        <!-- <NxGridLoader
-          v-if="loaderType === 'Grid'"
-          v-for="(size, sizeIndex) in sizes"
-          :key="sizeIndex"
-          :isLoading="true"
-          :size="size"
-        />
-        <NxHeartsLoader
+        <template v-if="loaderType === 'Grid'">
+          <NxGridLoader
+            v-for="(size, sizeIndex) in sizes"
+            :key="sizeIndex"
+            :isLoading="true"
+            :size="size"
+          />
+        </template>
+        <!-- <NxHeartsLoader
           v-if="loaderType === 'Heart'"
           v-for="(size, sizeIndex) in sizes"
           :key="sizeIndex"
@@ -109,7 +110,7 @@ import {
   NxBallTriangleLoader,
   NxBarsLoader,
   NxCirclesLoader,
-  // NxGridLoader,
+  NxGridLoader,
   // NxHeartsLoader,
   // NxOvalLoader,
   // NxPuffLoader,
@@ -125,7 +126,7 @@ export default {
     NxBallTriangleLoader,
     NxBarsLoader,
     NxCirclesLoader,
-    // NxGridLoader,
+    NxGridLoader,
     // NxHeartsLoader,
     // NxOvalLoader,
     // NxPuffLoader,

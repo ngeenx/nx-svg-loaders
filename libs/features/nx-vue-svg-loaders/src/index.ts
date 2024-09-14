@@ -11,3 +11,6 @@ export { NxBarsLoader };
 
 import NxCirclesLoader from "./comonents/circles-loader/NxCirclesLoader.vue";
 export { NxCirclesLoader };
+
+import NxGridLoader from "./comonents/grid-loader/NxGridLoader.vue";
+export { NxGridLoader };
