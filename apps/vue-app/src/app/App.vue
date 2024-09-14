@@ -26,14 +26,15 @@
             :size="size"
           />
         </template>
-        <!-- <NxBarsLoader
-          v-if="loaderType === 'Bars'"
-          v-for="(size, sizeIndex) in sizes"
-          :key="sizeIndex"
-          :isLoading="true"
-          :size="size"
-        />
-        <NxCirclesLoader
+        <template v-if="loaderType === 'Bars'">
+          <NxBarsLoader
+            v-for="(size, sizeIndex) in sizes"
+            :key="sizeIndex"
+            :isLoading="true"
+            :size="size"
+          />
+        </template>
+        <!-- <NxCirclesLoader
           v-if="loaderType === 'Circles'"
           v-for="(size, sizeIndex) in sizes"
           :key="sizeIndex"
@@ -105,7 +106,7 @@
 import {
   NxAudioLoader,
   NxBallTriangleLoader,
-  // NxBarsLoader,
+  NxBarsLoader,
   // NxCirclesLoader,
   // NxGridLoader,
   // NxHeartsLoader,
@@ -121,7 +122,7 @@ export default {
   components: {
     NxAudioLoader,
     NxBallTriangleLoader,
-    // NxBarsLoader,
+    NxBarsLoader,
     // NxCirclesLoader,
     // NxGridLoader,
     // NxHeartsLoader,

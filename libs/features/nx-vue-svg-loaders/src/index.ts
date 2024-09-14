@@ -5,3 +5,6 @@ export { NxAudioLoader };
 
 import NxBallTriangleLoader from "./comonents/ball-triangle-loader/NxBallTriangleLoader.vue";
 export { NxBallTriangleLoader };
+
+import NxBarsLoader from "./comonents/bars-loader/NxBarsLoader.vue";
+export { NxBarsLoader };
