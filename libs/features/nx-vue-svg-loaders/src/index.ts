@@ -26,3 +26,6 @@ export { NxPuffLoader };
 
 import NxRingsLoader from "./components/rings-loader/NxRingsLoader.vue";
 export { NxRingsLoader };
+
+import NxSpinningCirclesLoader from "./components/spinning-circles-loader/NxSpinningCirclesLoader.vue";
+export { NxSpinningCirclesLoader };

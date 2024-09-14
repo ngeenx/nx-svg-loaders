@@ -82,14 +82,15 @@
             :size="size"
           />
         </template>
-        <!-- <NxSpinningCirclesLoader
-          v-if="loaderType === 'Spinning Circles'"
-          v-for="(size, sizeIndex) in sizes"
-          :key="sizeIndex"
-          :isLoading="true"
-          :size="size"
-        />
-        <NxTailSpinLoader
+        <template v-if="loaderType === 'Spinning Circles'">
+          <NxSpinningCirclesLoader
+            v-for="(size, sizeIndex) in sizes"
+            :key="sizeIndex"
+            :isLoading="true"
+            :size="size"
+          />
+        </template>
+        <!-- <NxTailSpinLoader
           v-if="loaderType === 'Tail Spin'"
           v-for="(size, sizeIndex) in sizes"
           :key="sizeIndex"
@@ -119,7 +120,7 @@ import {
   NxOvalLoader,
   NxPuffLoader,
   NxRingsLoader,
-  // NxSpinningCirclesLoader,
+  NxSpinningCirclesLoader,
   // NxTailSpinLoader,
   // NxThreeDotsLoader,
 } from '@ngeenx/nx-vue-svg-loaders';
@@ -135,7 +136,7 @@ export default {
     NxOvalLoader,
     NxPuffLoader,
     NxRingsLoader,
-    // NxSpinningCirclesLoader,
+    NxSpinningCirclesLoader,
     // NxTailSpinLoader,
     // NxThreeDotsLoader,
   },
