@@ -1,1 +1,1 @@
-export * from './lib/nx-svelte-svg-loaders';
+export * from "./lib/components/base-loader/base-loader";
