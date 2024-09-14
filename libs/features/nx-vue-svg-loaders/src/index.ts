@@ -29,3 +29,6 @@ export { NxRingsLoader };
 
 import NxSpinningCirclesLoader from "./components/spinning-circles-loader/NxSpinningCirclesLoader.vue";
 export { NxSpinningCirclesLoader };
+
+import NxTailSpinLoader from "./components/tail-spin-loader/NxTailSpinLoader.vue";
+export { NxTailSpinLoader };
