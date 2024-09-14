@@ -8,3 +8,6 @@ export { NxBallTriangleLoader };
 
 import NxBarsLoader from "./comonents/bars-loader/NxBarsLoader.vue";
 export { NxBarsLoader };
+
+import NxCirclesLoader from "./comonents/circles-loader/NxCirclesLoader.vue";
+export { NxCirclesLoader };
