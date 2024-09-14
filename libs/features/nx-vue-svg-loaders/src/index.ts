@@ -14,3 +14,9 @@ export { NxCirclesLoader };
 
 import NxGridLoader from "./components/grid-loader/NxGridLoader.vue";
 export { NxGridLoader };
+
+import NxHeartsLoader from "./components/hearts-loader/NxHeartsLoader.vue";
+export { NxHeartsLoader };
+
+import NxOvalLoader from "./components/oval-loader/NxOvalLoader.vue";
+export { NxOvalLoader };

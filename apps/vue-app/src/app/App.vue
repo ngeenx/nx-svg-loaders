@@ -50,21 +50,23 @@
             :size="size"
           />
         </template>
-        <!-- <NxHeartsLoader
-          v-if="loaderType === 'Heart'"
-          v-for="(size, sizeIndex) in sizes"
-          :key="sizeIndex"
-          :isLoading="true"
-          :size="size"
-        />
-        <NxOvalLoader
-          v-if="loaderType === 'Oval'"
-          v-for="(size, sizeIndex) in sizes"
-          :key="sizeIndex"
-          :isLoading="true"
-          :size="size"
-        />
-        <NxPuffLoader
+        <template v-if="loaderType === 'Heart'">
+          <NxHeartsLoader
+            v-for="(size, sizeIndex) in sizes"
+            :key="sizeIndex"
+            :isLoading="true"
+            :size="size"
+          />
+        </template>
+        <template v-if="loaderType === 'Oval'">
+          <NxOvalLoader
+            v-for="(size, sizeIndex) in sizes"
+            :key="sizeIndex"
+            :isLoading="true"
+            :size="size"
+          />
+        </template>
+        <!-- <NxPuffLoader
           v-if="loaderType === 'Puff'"
           v-for="(size, sizeIndex) in sizes"
           :key="sizeIndex"
@@ -111,8 +113,8 @@ import {
   NxBarsLoader,
   NxCirclesLoader,
   NxGridLoader,
-  // NxHeartsLoader,
-  // NxOvalLoader,
+  NxHeartsLoader,
+  NxOvalLoader,
   // NxPuffLoader,
   // NxRingsLoader,
   // NxSpinningCirclesLoader,
@@ -127,8 +129,8 @@ export default {
     NxBarsLoader,
     NxCirclesLoader,
     NxGridLoader,
-    // NxHeartsLoader,
-    // NxOvalLoader,
+    NxHeartsLoader,
+    NxOvalLoader,
     // NxPuffLoader,
     // NxRingsLoader,
     // NxSpinningCirclesLoader,
