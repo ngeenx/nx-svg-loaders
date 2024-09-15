@@ -1,45 +1,41 @@
+<script lang="ts">
+  import { NxAudioLoader } from '@ngeenx/nx-svelte-svg-loaders';
+
+  const sizes = [10, 15, 20, 25, 30, 25, 40, 50],
+    loaderTypes = [
+      'Audio',
+      'Ball Triangle',
+      'Bars',
+      'Circles',
+      'Grid',
+      'Heart',
+      'Oval',
+      'Puff',
+      'Rings',
+      'Spinning Circles',
+      'Tail Spin',
+      'Three Dots',
+    ];
+</script>
+
 <main>
   <header>Svelte SVG Loaders</header>
 
-	{#each loaderTypes as loaderType}
-		<section
-      class="flex flex-row items-center justify-center gap-5 p-4">
-      <h1>{ loaderType } Loaders</h1>
+  {#each loaderTypes as loaderType}
+    <section class="flex flex-row items-center justify-center gap-5 p-4">
+      <h1>{loaderType} Loaders</h1>
 
       <div>
         {#each sizes as size}
-          <NxAudioLoader
-            isLoading={true}
-            size={size}
-          />
+          {#if loaderType === 'Audio'}
+            <NxAudioLoader isLoading={true} {size} />
+          {/if}
         {/each}
       </div>
     </section>
-	{/each}
+  {/each}
 </main>
 
-<script lang="ts">
-import {
-  NxAudioLoader
-} from '@ngeenx/nx-svelte-svg-loaders';
-
- const sizes = [10, 15, 20, 25, 30, 25, 40, 50],
-  loaderTypes= [
-    'Audio',
-    'Ball Triangle',
-    'Bars',
-    'Circles',
-    'Grid',
-    'Heart',
-    'Oval',
-    'Puff',
-    'Rings',
-    'Spinning Circles',
-    'Tail Spin',
-    'Three Dots',
-  ];
-</script>
-
 <style lang="scss">
-@import './app.scss';
+  @import './app.scss';
 </style>
