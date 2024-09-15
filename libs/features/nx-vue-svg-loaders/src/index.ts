@@ -1,37 +1,29 @@
 export * from "./components/base-loader/base-loader";
 
 import NxAudioLoader from "./components/audio-loader/NxAudioLoader.vue";
-export { NxAudioLoader };
-
 import NxBallTriangleLoader from "./components/ball-triangle-loader/NxBallTriangleLoader.vue";
-export { NxBallTriangleLoader };
-
 import NxBarsLoader from "./components/bars-loader/NxBarsLoader.vue";
-export { NxBarsLoader };
-
 import NxCirclesLoader from "./components/circles-loader/NxCirclesLoader.vue";
-export { NxCirclesLoader };
-
 import NxGridLoader from "./components/grid-loader/NxGridLoader.vue";
-export { NxGridLoader };
-
 import NxHeartsLoader from "./components/hearts-loader/NxHeartsLoader.vue";
-export { NxHeartsLoader };
-
 import NxOvalLoader from "./components/oval-loader/NxOvalLoader.vue";
-export { NxOvalLoader };
-
 import NxPuffLoader from "./components/puff-loader/NxPuffLoader.vue";
-export { NxPuffLoader };
-
 import NxRingsLoader from "./components/rings-loader/NxRingsLoader.vue";
-export { NxRingsLoader };
-
 import NxSpinningCirclesLoader from "./components/spinning-circles-loader/NxSpinningCirclesLoader.vue";
-export { NxSpinningCirclesLoader };
-
 import NxTailSpinLoader from "./components/tail-spin-loader/NxTailSpinLoader.vue";
-export { NxTailSpinLoader };
-
 import NxThreeDotsLoader from "./components/three-dots-loader/NxThreeDotsLoader.vue";
-export { NxThreeDotsLoader };
+
+export {
+  NxAudioLoader,
+  NxBallTriangleLoader,
+  NxBarsLoader,
+  NxCirclesLoader,
+  NxGridLoader,
+  NxHeartsLoader,
+  NxOvalLoader,
+  NxPuffLoader,
+  NxRingsLoader,
+  NxSpinningCirclesLoader,
+  NxTailSpinLoader,
+  NxThreeDotsLoader,
+};
