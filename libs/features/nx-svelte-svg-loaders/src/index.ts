@@ -10,6 +10,7 @@ import NxOvalLoader from "./lib/components/oval-loader/NxOvalLoader.svelte";
 import NxPuffLoader from "./lib/components/puff-loader/NxPuffLoader.svelte";
 import NxRingsLoader from "./lib/components/rings-loader/NxRingsLoader.svelte";
 import NxSpinningCirclesLoader from "./lib/components/spinning-circles-loader/NxSpinningCirclesLoader.svelte";
+import NxTailSpinLoader from "./lib/components/tail-spin-loader/NxTailSpinLoader.svelte";
 
 export {
   NxAudioLoader,
@@ -22,4 +23,5 @@ export {
   NxPuffLoader,
   NxRingsLoader,
   NxSpinningCirclesLoader,
+  NxTailSpinLoader,
 };
