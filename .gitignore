@@ -43,3 +43,4 @@ Thumbs.db
 .nx/workspace-data
 
 .angular
+**/vite.config.ts.timestamp-*.mjs
