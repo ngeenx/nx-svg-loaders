@@ -8,7 +8,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'nx-svg-loaders',
+  title: 'nx-svg-loaders | NGEENX',
   tagline: 'SVG loaders for everyone',
   favicon: 'img/favicon.ico',
 
