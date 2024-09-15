@@ -8,6 +8,7 @@ import NxGridLoader from "./lib/components/grid-loader/NxGridLoader.svelte";
 import NxHeartsLoader from "./lib/components/hearts-loader/NxHeartsLoader.svelte";
 import NxOvalLoader from "./lib/components/oval-loader/NxOvalLoader.svelte";
 import NxPuffLoader from "./lib/components/puff-loader/NxPuffLoader.svelte";
+import NxRingsLoader from "./lib/components/rings-loader/NxRingsLoader.svelte";
 
 export {
   NxAudioLoader,
@@ -18,4 +19,5 @@ export {
   NxHeartsLoader,
   NxOvalLoader,
   NxPuffLoader,
+  NxRingsLoader,
 };
