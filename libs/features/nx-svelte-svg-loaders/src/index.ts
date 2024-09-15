@@ -5,6 +5,7 @@ import NxBallTriangleLoader from "./lib/components/ball-triangle-loader/NxBallTr
 import NxBarsLoader from "./lib/components/bars-loader/NxBarsLoader.svelte";
 import NxCirclesLoader from "./lib/components/circles-loader/NxCirclesLoader.svelte";
 import NxGridLoader from "./lib/components/grid-loader/NxGridLoader.svelte";
+import NxHeartsLoader from "./lib/components/hearts-loader/NxHeartsLoader.svelte";
 
 export {
   NxAudioLoader,
@@ -12,4 +13,5 @@ export {
   NxBarsLoader,
   NxCirclesLoader,
   NxGridLoader,
+  NxHeartsLoader,
 };

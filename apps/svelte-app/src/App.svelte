@@ -5,6 +5,7 @@
     NxBarsLoader,
     NxCirclesLoader,
     NxGridLoader,
+    NxHeartsLoader,
   } from '@ngeenx/nx-svelte-svg-loaders';
 
   const sizes = [10, 15, 20, 25, 30, 25, 40, 50],
@@ -51,6 +52,10 @@
 
           {#if loaderType === 'Grid'}
             <NxGridLoader isLoading={true} {size} />
+          {/if}
+
+          {#if loaderType === 'Heart'}
+            <NxHeartsLoader isLoading={true} {size} />
           {/if}
         {/each}
       </div>
