@@ -1,5 +1,8 @@
 <script lang="ts">
-  import { NxAudioLoader } from '@ngeenx/nx-svelte-svg-loaders';
+  import {
+    NxAudioLoader,
+    NxBallTriangleLoader,
+  } from '@ngeenx/nx-svelte-svg-loaders';
 
   const sizes = [10, 15, 20, 25, 30, 25, 40, 50],
     loaderTypes = [
@@ -29,6 +32,9 @@
         {#each sizes as size}
           {#if loaderType === 'Audio'}
             <NxAudioLoader isLoading={true} {size} />
+          {/if}
+          {#if loaderType === 'Ball Triangle'}
+            <NxBallTriangleLoader isLoading={true} {size} />
           {/if}
         {/each}
       </div>
