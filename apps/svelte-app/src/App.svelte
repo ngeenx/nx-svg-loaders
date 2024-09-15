@@ -9,6 +9,7 @@
     NxOvalLoader,
     NxPuffLoader,
     NxRingsLoader,
+    NxSpinningCirclesLoader,
   } from '@ngeenx/nx-svelte-svg-loaders';
 
   const sizes = [10, 15, 20, 25, 30, 25, 40, 50],
@@ -71,6 +72,10 @@
 
           {#if loaderType === 'Rings'}
             <NxRingsLoader isLoading={true} {size} />
+          {/if}
+
+          {#if loaderType === 'Spinning Circles'}
+            <NxSpinningCirclesLoader isLoading={true} {size} />
           {/if}
         {/each}
       </div>
