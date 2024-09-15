@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "../../.eslintrc.json"
+  ],
+  "ignorePatterns": ["!**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.svelte"]
+    }
+  ]
+}

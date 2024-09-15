@@ -1,15 +1,10 @@
-import App from "./App.svelte";
+import App from './App.svelte';
 
-const target = document.getElementById("app");
-
-let app;
-
-if (target) {
-  app = new App({
-    target: target,
-  });
-} else {
-  console.error("The target element '#app' was not found in the document.");
-}
+const app = new App({
+  target: document.body,
+  props: {
+    name: 'Nx with Svelte',
+  },
+});
 
 export default app;
