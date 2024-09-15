@@ -3,6 +3,7 @@
     NxAudioLoader,
     NxBallTriangleLoader,
     NxBarsLoader,
+    NxCirclesLoader,
   } from '@ngeenx/nx-svelte-svg-loaders';
 
   const sizes = [10, 15, 20, 25, 30, 25, 40, 50],
@@ -41,6 +42,10 @@
 
           {#if loaderType === 'Bars'}
             <NxBarsLoader isLoading={true} {size} />
+          {/if}
+
+          {#if loaderType === 'Circles'}
+            <NxCirclesLoader isLoading={true} {size} />
           {/if}
         {/each}
       </div>
