@@ -1,0 +1,49 @@
+---
+sidebar_position: 3
+---
+
+# Usage
+
+Import selected `Nx{SELECTED}LoaderComponent` component into your standalone component or module and then use with `<nx-angular-svg-{SELECT}-loader>` tag.
+
+```js title="app.component.ts"
+import { Component } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { RouterModule } from "@angular/router";
+
+// highlight-next-line
+import { NxOvalLoaderComponent } from "@ngeenx/nx-angular-svg-loaders";
+
+@Component({
+  standalone: true,
+  imports: [
+    RouterModule,
+    CommonModule,
+
+    // ...
+
+    // highlight-next-line
+    NxOvalLoaderComponent
+  ],
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.scss",
+})
+export class AppComponent {
+  // ...
+
+  // highlight-next-line
+  public isLoading = true;
+
+  // ...
+}
+```
+
+```html  title="app.component.html"
+...
+
+// highlight-next-line
+<nx-angular-svg-oval-loader [isLoading]="isLoading" [size]="40" />
+
+...
+```
