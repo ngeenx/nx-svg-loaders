@@ -14,7 +14,7 @@ const FeatureList = [
     description: <>Contain only the content you need.</>,
   },
   {
-    title: 'Powered by X',
+    title: 'Powered by:',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: <>Angular, React, Vue and Svelte support</>,
   },
