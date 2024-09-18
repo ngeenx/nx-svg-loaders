@@ -11,12 +11,20 @@ Import selected `Nx{SELECTED}Loader` component into your component or module and
 
 ```js title="app.svelte"
 <script lang="ts">
+  // highlight-next-line
   import { NxAudioLoader } from '@ngeenx/nx-svelte-svg-loaders';
+
+  // ..
+
+  // highlight-next-line
+  let isLoading = true;
 </script>
 
 <div>
   <!-- ... -->
-  <NxAudioLoader isLoading={true} size={40} />
+
+  // highlight-next-line
+  <NxAudioLoader {isLoading} size={40} />
 
   <!-- ... -->
 </div>
