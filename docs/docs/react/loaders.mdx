@@ -1,0 +1,23 @@
+---
+sidebar_position: 2
+---
+
+# Loaders
+
+import { loaderTypes } from "./../../../libs/utils/nx-svg-shared-utils/src/index";
+
+Available loader types:
+
+<ul>
+  {
+    loaderTypes.map((loaderType, index) => {
+      return (
+        <li key={index}>
+          <b>{loaderType}</b>:
+          import: <code>Nx{`${loaderType.charAt(0).toUpperCase()}${loaderType.slice(1)}`.replace(' ', '')}Loader</code> /
+          component: <code>Nx{`${loaderType.charAt(0).toUpperCase()}${loaderType.slice(1)}`.replace(' ', '')}Loader</code>
+        </li>
+      );
+    })
+  }
+</ul>

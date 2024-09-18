@@ -1,0 +1,33 @@
+---
+sidebar_position: 3
+---
+
+# Usage
+
+Import selected `Nx{SELECTED}Loader` component into your component or module and then use with `<Nx{SELECTED}Loader>` tag.
+
+```js title="app.tsx"
+import { useState } from "react";
+
+// highlight-next-line
+import { NxOvalLoaderComponent } from "@ngeenx/nx-angular-svg-loaders";
+
+const App = (props: IAppProps) => {
+  // ...
+
+  // highlight-next-line
+  const [isLoading, setIsLoading] = useState(true);
+
+  return (
+    <>
+      {/* ... */}
+
+      // highlight-next-line
+      <NxAudioLoader isLoading={isLoading} size={size} />
+
+      {/* ... */}
+    </>
+  );
+};
+
+```
