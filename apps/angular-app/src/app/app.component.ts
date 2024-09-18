@@ -1,5 +1,9 @@
 import { Component } from "@angular/core";
 import { RouterModule } from "@angular/router";
+import { CommonModule } from "@angular/common";
+
+import { sizes, loaderTypes } from '@ngeenx/nx-svg-shared-utils';
+
 import {
   NxAudioLoaderComponent,
   NxBallTriangleLoaderComponent,
@@ -14,7 +18,6 @@ import {
   NxTailSpinLoaderComponent,
   NxThreeDotsLoaderComponent,
 } from "@ngeenx/nx-angular-svg-loaders";
-import { CommonModule } from "@angular/common";
 
 @Component({
   standalone: true,
@@ -42,20 +45,6 @@ import { CommonModule } from "@angular/common";
   styleUrl: "./app.component.scss",
 })
 export class AppComponent {
-  public sizes: number[] = [10, 15, 20, 25, 30, 25, 40, 50];
-
-  public loaderTypes: string[] = [
-    "Audio",
-    "Ball Triangle",
-    "Bars",
-    "Circles",
-    "Grid",
-    "Heart",
-    "Oval",
-    "Puff",
-    "Rings",
-    "Spinning Circles",
-    "Tail Spin",
-    "Three Dots",
-  ];
+  public sizes: number[] = sizes;
+  public loaderTypes: string[] = loaderTypes;
 }

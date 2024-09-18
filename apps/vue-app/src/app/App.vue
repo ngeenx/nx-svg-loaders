@@ -112,6 +112,8 @@
 </template>
 
 <script>
+import { sizes, loaderTypes } from '@ngeenx/nx-svg-shared-utils';
+
 import {
   NxAudioLoader,
   NxBallTriangleLoader,
@@ -144,21 +146,8 @@ export default {
   },
   data() {
     return {
-      sizes: [10, 15, 20, 25, 30, 25, 40, 50],
-      loaderTypes: [
-        'Audio',
-        'Ball Triangle',
-        'Bars',
-        'Circles',
-        'Grid',
-        'Heart',
-        'Oval',
-        'Puff',
-        'Rings',
-        'Spinning Circles',
-        'Tail Spin',
-        'Three Dots',
-      ],
+      sizes: sizes,
+      loaderTypes: loaderTypes,
     };
   },
 };

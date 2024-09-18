@@ -1,5 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from 'react';
+
+import { sizes, loaderTypes } from '@ngeenx/nx-svg-shared-utils';
+
 import {
   NxAudioLoader,
   NxBallTriangleLoader,
@@ -18,23 +21,6 @@ import {
 import './app.module.scss';
 
 export function App() {
-  const sizes: number[] = [10, 15, 20, 25, 30, 25, 40, 50];
-
-  const loaderTypes: string[] = [
-    'Audio',
-    'Ball Triangle',
-    'Bars',
-    'Circles',
-    'Grid',
-    'Heart',
-    'Oval',
-    'Puff',
-    'Rings',
-    'Spinning Circles',
-    'Tail Spin',
-    'Three Dots',
-  ];
-
   return (
     <main>
       <header>React SVG Loaders</header>
