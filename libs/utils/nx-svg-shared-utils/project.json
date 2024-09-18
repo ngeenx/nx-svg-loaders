@@ -1,0 +1,32 @@
+{
+  "name": "nx-svg-shared-utils",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/utils/nx-svg-shared-utils/src",
+  "projectType": "library",
+  "release": {
+    "version": {
+      "generatorOptions": {
+        "packageRoot": "dist/{projectRoot}",
+        "currentVersionResolver": "git-tag"
+      }
+    }
+  },
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/utils/nx-svg-shared-utils",
+        "main": "libs/utils/nx-svg-shared-utils/src/index.ts",
+        "tsConfig": "libs/utils/nx-svg-shared-utils/tsconfig.lib.json",
+        "assets": ["libs/utils/nx-svg-shared-utils/*.md"]
+      }
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  }
+}

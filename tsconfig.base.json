@@ -24,6 +24,9 @@
       "@ngeenx/nx-svelte-svg-loaders": [
         "libs/features/nx-svelte-svg-loaders/src/index.ts"
       ],
+      "@ngeenx/nx-svg-shared-utils": [
+        "libs/utils/nx-svg-shared-utils/src/index.ts"
+      ],
       "@ngeenx/nx-vue-svg-loaders": [
         "libs/features/nx-vue-svg-loaders/src/index.ts"
       ]
