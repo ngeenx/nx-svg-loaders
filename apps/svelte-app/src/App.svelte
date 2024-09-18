@@ -46,7 +46,7 @@
             <NxGridLoader isLoading={true} {size} />
           {/if}
 
-          {#if loaderType === 'Heart'}
+          {#if loaderType === 'Hearts'}
             <NxHeartsLoader isLoading={true} {size} />
           {/if}
 

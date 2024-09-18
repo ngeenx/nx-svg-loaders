@@ -6,7 +6,7 @@ const loaderTypes: string[] = [
   "Bars",
   "Circles",
   "Grid",
-  "Heart",
+  "Hearts",
   "Oval",
   "Puff",
   "Rings",

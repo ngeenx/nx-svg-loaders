@@ -50,7 +50,7 @@ export function App() {
                 {loaderType === 'Grid' && (
                   <NxGridLoader isLoading={true} size={size} />
                 )}
-                {loaderType === 'Heart' && (
+                {loaderType === 'Hearts' && (
                   <NxHeartsLoader isLoading={true} size={size} />
                 )}
                 {loaderType === 'Oval' && (

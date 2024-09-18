@@ -50,7 +50,7 @@
             :size="size"
           />
         </template>
-        <template v-if="loaderType === 'Heart'">
+        <template v-if="loaderType === 'Hearts'">
           <NxHeartsLoader
             v-for="(size, sizeIndex) in sizes"
             :key="sizeIndex"
