@@ -4,4 +4,20 @@ sidebar_position: 2
 
 # Loaders
 
-Available loader list ...
+import { loaderTypes } from "./../../../libs/utils/nx-svg-shared-utils/src/index";
+
+Available loader types:
+
+<ul>
+  {
+    loaderTypes.map((loaderType, index) => {
+      return (
+        <li key={index}>
+          <b>{loaderType}</b>:
+          import: <code>Nx{`${loaderType.charAt(0).toUpperCase()}${loaderType.slice(1)}`.replace(' ', '')}LoaderComponent</code> /
+          component: <code>nx-angular-svg-{`${loaderType.charAt(0).toLowerCase()}${loaderType.slice(1)}`.replace(' ', '')}-loader</code>
+        </li>
+      );
+    })
+  }
+</ul>
