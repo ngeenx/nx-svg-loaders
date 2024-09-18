@@ -15,7 +15,7 @@ Available loader types:
         <li key={index}>
           <b>{loaderType}</b>:
           import: <code>Nx{`${loaderType.charAt(0).toUpperCase()}${loaderType.slice(1)}`.replace(' ', '')}Loader</code> /
-          component: <code>Nx{`${loaderType.charAt(0).toUpperCase()}${loaderType.slice(1)}`.replace(' ', '')}Loader</code>
+          component: <code>&lt;Nx{`${loaderType.charAt(0).toUpperCase()}${loaderType.slice(1)}`.replace(' ', '')}Loader&gt;</code>
         </li>
       );
     })
