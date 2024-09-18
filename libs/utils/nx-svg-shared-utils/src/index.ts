@@ -1,1 +1,1 @@
-export * from './lib/nx-svg-shared-utils';
+export * from "./lib/nx-svg-shared-utils";

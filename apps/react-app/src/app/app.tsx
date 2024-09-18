@@ -18,7 +18,7 @@ import {
   NxThreeDotsLoader,
 } from '@ngeenx/nx-react-svg-loaders';
 
-import './app.module.scss';
+import '/libs/utils/nx-svg-shared-utils/src/styles/app.component.scss';
 
 export function App() {
   return (

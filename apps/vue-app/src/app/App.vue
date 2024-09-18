@@ -144,6 +144,7 @@ export default {
     NxTailSpinLoader,
     NxThreeDotsLoader,
   },
+
   data() {
     return {
       sizes: sizes,
@@ -154,5 +155,5 @@ export default {
 </script>
 
 <style scoped>
-@import './app.scss';
+@import './../../libs/utils/nx-svg-shared-utils/src/styles/app.component.scss';
 </style>

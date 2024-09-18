@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { CommonModule } from "@angular/common";
 
-import { sizes, loaderTypes } from '@ngeenx/nx-svg-shared-utils';
+import { sizes, loaderTypes } from "@ngeenx/nx-svg-shared-utils";
 
 import {
   NxAudioLoaderComponent,
@@ -42,7 +42,7 @@ import {
   ],
   selector: "app-root",
   templateUrl: "./app.component.html",
-  styleUrl: "./app.component.scss",
+  styleUrls: ["/libs/utils/nx-svg-shared-utils/src/styles/app.component.scss"],
 })
 export class AppComponent {
   public sizes: number[] = sizes;

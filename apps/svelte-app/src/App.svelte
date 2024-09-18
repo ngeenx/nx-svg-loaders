@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { sizes, loaderTypes } from '@ngeenx/nx-svg-shared-utils';
+
   import {
     NxAudioLoader,
     NxBallTriangleLoader,
@@ -13,8 +15,6 @@
     NxTailSpinLoader,
     NxThreeDotsLoader,
   } from '@ngeenx/nx-svelte-svg-loaders';
-
-  import { sizes, loaderTypes } from '@ngeenx/nx-svg-shared-utils';
 </script>
 
 <main>
@@ -80,5 +80,5 @@
 </main>
 
 <style lang="scss">
-  @import './app.scss';
+  @import './../../../libs/utils/nx-svg-shared-utils/src/styles/app.component.scss';
 </style>
