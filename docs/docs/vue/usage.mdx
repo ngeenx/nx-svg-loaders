@@ -1,0 +1,85 @@
+---
+sidebar_position: 3
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Usage
+
+Import selected `Nx{SELECTED}Loader` component into your component or module and then use with `<Nx{SELECTED}Loader>` tag.
+
+
+<Tabs>
+  <TabItem value="options-api" label="Options API" default>
+```js title="app.vue"
+<template>
+  <div>
+    // highlight-next-line
+    <NxAudioLoader :isLoading="true" :size="40" />
+  </div>
+</template>
+
+<script>
+// highlight-next-line
+import { NxAudioLoader } from '@ngeenx/nx-vue-svg-loaders';
+
+export default {
+  components: {
+    // highlight-next-line
+    NxAudioLoader,
+  },
+
+  data() {
+    return {
+      // highlight-next-line
+      isLoading: true,
+    };
+  },
+};
+</script>
+
+<style scoped lang="scss">
+    // ...
+</style>
+```
+  </TabItem>
+  <TabItem value="composition-api" label="Composition API">
+```js title="app.vue"
+<template>
+  <div>
+    // highlight-next-line
+    <NxAudioLoader :isLoading="isLoading" :size="40" />
+  </div>
+</template>
+
+<script>
+import { ref } from 'vue';
+
+// highlight-next-line
+import { NxAudioLoader } from '@ngeenx/nx-vue-svg-loaders';
+
+export default {
+  components: {
+    // highlight-next-line
+    NxAudioLoader,
+  },
+
+  setup() {
+    // highlight-next-line
+    const isLoading = ref(true);
+
+    return {
+      // highlight-next-line
+      isLoading,
+    };
+  },
+};
+</script>
+
+<style scoped lang="scss">
+    // ...
+</style>
+```
+  </TabItem>
+</Tabs>
