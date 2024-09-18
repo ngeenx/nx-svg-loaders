@@ -1,0 +1,27 @@
+---
+sidebar_position: 3
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Usage
+
+Import selected `Nx{SELECTED}Loader` component into your component or module and then use with `<Nx{SELECTED}Loader>` tag.
+
+```js title="app.svelte"
+<script lang="ts">
+  import { NxAudioLoader } from '@ngeenx/nx-svelte-svg-loaders';
+</script>
+
+<div>
+  <!-- ... -->
+  <NxAudioLoader isLoading={true} size={40} />
+
+  <!-- ... -->
+</div>
+
+<style lang="scss">
+  // ...
+</style>
+```
