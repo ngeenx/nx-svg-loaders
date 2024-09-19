@@ -4,4 +4,4 @@ This repository is based on [Sam Herbert](https://github.com/SamHerbert)'s [SVG-
 
 > Basicly we can use SVG files with `<img>` tag or import directly as inline code. You can not style SVG content over `<img>` tag. Also, inline option is not good for clean development experience. We created this project for smooth and better experience for developers.
 
-![SVG Loaders Preview](https://github.com/ngeenx/nx-svg-loaders/blob/main/docs/static/img/nx-svg-loaders-preview.gif?raw=true)
+[![SVG Loaders Preview](https://github.com/ngeenx/nx-svg-loaders/blob/main/docs/static/img/nx-svg-loaders-preview.gif?raw=true)](https://ngeenx.github.io/nx-svg-loaders/)
