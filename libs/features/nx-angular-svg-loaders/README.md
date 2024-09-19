@@ -1,7 +1,3 @@
 # nx-angular-loaders
 
-This library was generated with [Nx](https://nx.dev).
-
-## Running unit tests
-
-Run `nx test nx-angular-loaders` to execute the unit tests.
+Angular SVG loader collection. Please check the **[documentation](https://ngeenx.github.io/nx-svg-loaders/docs/category/angular)** installation and usage.

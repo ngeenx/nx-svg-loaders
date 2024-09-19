@@ -1,7 +1,3 @@
 # nx-vue-svg-loaders
 
-This library was generated with [Nx](https://nx.dev).
-
-## Running unit tests
-
-Run `nx test nx-vue-svg-loaders` to execute the unit tests via [Vitest](https://vitest.dev/).
+Vue SVG loader collection. Please check the **[documentation](https://ngeenx.github.io/nx-svg-loaders/docs/category/vue)** installation and usage.
