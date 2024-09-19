@@ -36,10 +36,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22.x
-          cache: pnpm
+          cache: npm
 
       - name: Install dependencies
-        run: pnpm i
+        run: |
+          npm i pnpm -g
+          pnpm i
 
       - name: Build
         run: pnpm build
