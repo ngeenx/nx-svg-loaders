@@ -10,7 +10,7 @@ Import selected `Nx{SELECTED}Loader` component into your component or module and
 import { useState } from "react";
 
 // highlight-next-line
-import { NxOvalLoaderComponent } from "@ngeenx/nx-angular-svg-loaders";
+import { NxOvalLoader } from "@ngeenx/nx-react-svg-loaders";
 
 const App = (props: IAppProps) => {
   // ...
@@ -23,7 +23,7 @@ const App = (props: IAppProps) => {
       {/* ... */}
 
       // highlight-next-line
-      <NxAudioLoader isLoading={isLoading} size={40} />
+      <NxOvalLoader isLoading={isLoading} size={40} />
 
       {/* ... */}
     </>

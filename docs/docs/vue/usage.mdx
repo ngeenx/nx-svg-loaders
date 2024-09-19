@@ -15,18 +15,18 @@ Import selected `Nx{SELECTED}Loader` component into your component or module and
 <template>
   <div>
     // highlight-next-line
-    <NxAudioLoader :isLoading="true" :size="40" />
+    <NxOvalLoader :isLoading="true" :size="40" />
   </div>
 </template>
 
 <script>
 // highlight-next-line
-import { NxAudioLoader } from '@ngeenx/nx-vue-svg-loaders';
+import { NxOvalLoader } from '@ngeenx/nx-vue-svg-loaders';
 
 export default {
   components: {
     // highlight-next-line
-    NxAudioLoader,
+    NxOvalLoader,
   },
 
   data() {
@@ -48,7 +48,7 @@ export default {
 <template>
   <div>
     // highlight-next-line
-    <NxAudioLoader :isLoading="isLoading" :size="40" />
+    <NxOvalLoader :isLoading="isLoading" :size="40" />
   </div>
 </template>
 
@@ -56,12 +56,12 @@ export default {
 import { ref } from 'vue';
 
 // highlight-next-line
-import { NxAudioLoader } from '@ngeenx/nx-vue-svg-loaders';
+import { NxOvalLoader } from '@ngeenx/nx-vue-svg-loaders';
 
 export default {
   components: {
     // highlight-next-line
-    NxAudioLoader,
+    NxOvalLoader,
   },
 
   setup() {
