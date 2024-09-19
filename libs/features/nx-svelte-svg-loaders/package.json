@@ -1,6 +1,23 @@
 {
   "name": "@ngeenx/nx-svelte-svg-loaders",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "Svelte SVG Loaders",
+  "keywords": [
+    "svelte",
+    "svg",
+    "loaders",
+    "svg loaders"
+  ],
+  "author": "relliv <epsilonelittr@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/ngeenx/nx-svg-loaders/issues"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/ngeenx/nx-svg-loaders#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ngeenx/nx-svg-loaders.git"
+  },
   "dependencies": {},
   "main": "./index.js",
   "module": "./index.mjs",
