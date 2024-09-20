@@ -23,6 +23,9 @@
       },
       "defaultConfiguration": "production"
     },
+    "tailwind-build": {
+      "command": "npx tailwindcss -i ./libs/features/nx-angular-svg-loaders/src/lib/components/base-loader/base-loader.component.scss -o ./dist/libs/features/nx-angular-svg-loaders/styles.css"
+    },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
