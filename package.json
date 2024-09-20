@@ -7,7 +7,8 @@
     "react:start": "nx serve react-app",
     "vue:start": "nx serve vue-app",
     "svelte:start": "nx serve svelte-app",
-    "angular:build": "nx build nx-angular-loaders && nx run nx-angular-loaders:tailwind-build"
+    "angular:build": "nx build nx-angular-svg-loaders && nx run nx-angular-svg-loaders:tailwind-build",
+    "react:build": "nx build nx-react-svg-loaders && nx run nx-react-svg-loaders:tailwind-build"
   },
   "private": true,
   "type": "module",

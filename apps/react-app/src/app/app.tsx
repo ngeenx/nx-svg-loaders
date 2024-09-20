@@ -25,8 +25,8 @@ export function App() {
     <main>
       <header>React SVG Loaders</header>
 
-      {loaderTypes.map((loaderType, loaderIndex) => (
-        <section key={loaderIndex}>
+      {loaderTypes.map((loaderType, index) => (
+        <section key={index}>
           <h1>{loaderType} Loaders</h1>
 
           <div>

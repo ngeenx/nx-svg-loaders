@@ -1,10 +1,10 @@
 import { IBaseLoaderProps } from '../base-loader/base-loader';
-import '../base-loader/base-loader.scss';
+import '../../../../../../utils/nx-svg-shared-utils/src/styles/base-loader.component.scss';
 
 export function NxSpinningCirclesLoader(props: IBaseLoaderProps) {
   return (
     props.isLoading && (
-      <div className={props.centered ? 'centered' : ''}>
+      <div className={'nx-svg-loader ' + (props.centered ? 'centered' : '')}>
         <svg
           width={props.size}
           height={props.size}
