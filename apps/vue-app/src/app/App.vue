@@ -5,7 +5,6 @@
     <section
       v-for="(loaderType, loaderIndex) in loaderTypes"
       :key="loaderIndex"
-      class="flex flex-row items-center justify-center gap-5 p-4"
     >
       <h1>{{ loaderType }} Loaders</h1>
 

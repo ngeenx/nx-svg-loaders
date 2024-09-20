@@ -26,10 +26,7 @@ export function App() {
       <header>React SVG Loaders</header>
 
       {loaderTypes.map((loaderType, loaderIndex) => (
-        <section
-          key={loaderIndex}
-          className="flex flex-row items-center justify-center gap-5 p-4"
-        >
+        <section key={loaderIndex}>
           <h1>{loaderType} Loaders</h1>
 
           <div>

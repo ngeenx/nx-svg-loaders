@@ -21,7 +21,7 @@
   <header>Svelte SVG Loaders</header>
 
   {#each loaderTypes as loaderType}
-    <section class="flex flex-row items-center justify-center gap-5 p-4">
+    <section>
       <h1>{loaderType} Loaders</h1>
 
       <div>
