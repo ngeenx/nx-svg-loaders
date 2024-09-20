@@ -7,7 +7,7 @@
   "// targets": "to see all targets run: nx show project nx-react-svg-loaders --web",
   "targets": {
     "tailwind-build": {
-      "command": "npx tailwindcss -i ./libs/utils/nx-svg-shared-utils/src/styles/base-loader.component.scss -o ./dist/libs/features/nx-angular-svg-loaders/styles.css"
+      "command": "npx tailwindcss -i ./libs/utils/nx-svg-shared-utils/src/styles/base-loader.component.scss -o ./dist/libs/features/nx-react-svg-loaders/styles.css"
     }
   }
 }
