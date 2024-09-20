@@ -1,0 +1,5 @@
+.nx-svg-loader {
+  &.centered {
+    @apply flex flex-row justify-center items-center w-full text-green-600;
+  }
+}

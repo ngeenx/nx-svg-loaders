@@ -1,3 +1,5 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import "./../../../libs/utils/nx-svg-shared-utils/src/styles/base-loader.component.scss";
