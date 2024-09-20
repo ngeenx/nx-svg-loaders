@@ -1,5 +1,5 @@
 {
-  "name": "nx-angular-loaders",
+  "name": "nx-angular-svg-loaders",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/features/nx-angular-svg-loaders/src",
   "prefix": "nx-angular",
@@ -24,7 +24,7 @@
       "defaultConfiguration": "production"
     },
     "tailwind-build": {
-      "command": "npx tailwindcss -i ./libs/features/nx-angular-svg-loaders/src/lib/components/base-loader/base-loader.component.scss -o ./dist/libs/features/nx-angular-svg-loaders/styles.css"
+      "command": "npx tailwindcss -i ./libs/utils/nx-svg-shared-utils/src/styles/base-loader.component.scss -o ./dist/libs/features/nx-angular-svg-loaders/styles.css"
     },
     "test": {
       "executor": "@nx/jest:jest",
