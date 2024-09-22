@@ -44,3 +44,5 @@ Thumbs.db
 
 .angular
 **/vite.config.ts.timestamp-*.mjs
+
+/**/*.tgz
