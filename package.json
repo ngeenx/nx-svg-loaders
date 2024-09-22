@@ -9,7 +9,8 @@
     "svelte:start": "nx serve svelte-app",
     "angular:build": "nx build nx-angular-svg-loaders && nx run nx-angular-svg-loaders:tailwind-build",
     "react:build": "nx build nx-react-svg-loaders && nx run nx-react-svg-loaders:tailwind-build",
-    "svelte:build": "nx run nx-svelte-svg-loaders:tailwind-build && nx run nx-svelte-svg-loaders:npm-pack"
+    "svelte:build": "nx run nx-svelte-svg-loaders:tailwind-build && nx run nx-svelte-svg-loaders:npm-pack",
+    "vue:build": "nx build nx-vue-svg-loaders && nx run nx-vue-svg-loaders:tailwind-build"
   },
   "private": true,
   "type": "module",
@@ -108,6 +109,7 @@
     "react-router-dom": "6.11.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "vite-tsconfig-paths": "^5.0.1",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4",
     "zone.js": "~0.14.3"
