@@ -19,7 +19,16 @@
     "url": "git@github.com:ngeenx/nx-svg-loaders.git"
   },
   "dependencies": {},
-  "main": "./index.js",
-  "module": "./index.mjs",
-  "typings": "./index.d.ts"
+  "main": "./src/index.ts",
+  "files": [
+    "./src",
+    "!./src/**/*.test.*",
+    "!./src/**/*.spec.*"
+  ],
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "require": "./src/index.ts"
+    }
+  }
 }

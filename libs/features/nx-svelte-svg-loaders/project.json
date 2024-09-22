@@ -13,15 +13,11 @@
   },
   "tags": [],
   "targets": {
-    "build": {
-      "executor": "@nx/vite:build",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/libs/features/nx-svelte-svg-loaders",
-        "main": "libs/features/nx-svelte-svg-loaders/src/index.ts",
-        "tsConfig": "libs/features/nx-svelte-svg-loaders/tsconfig.lib.json",
-        "assets": ["libs/features/nx-svelte-svg-loaders/*.md"]
-      }
+    "npm-pack": {
+      "command": "npm pack ./libs/features/nx-svelte-svg-loaders --pack-destination ./dist/libs/features/nx-svelte-svg-loaders"
+    },
+    "tailwind-build": {
+      "command": "npx tailwindcss -i ./libs/utils/nx-svg-shared-utils/src/styles/base-loader.component.scss -o ./libs/features/nx-svelte-svg-loaders/src/styles.css"
     },
     "nx-release-publish": {
       "options": {
