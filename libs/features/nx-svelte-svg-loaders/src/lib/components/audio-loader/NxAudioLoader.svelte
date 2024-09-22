@@ -1,8 +1,14 @@
+<script lang="ts">
+  export let isLoading: boolean = false;
+  export let size: number = 40;
+  export let centered: boolean = false;
+</script>
+
 {#if isLoading}
-  <div class="{centered ? 'centered' : ''}">
+  <div class={'nx-svg-loader ' + (centered ? 'centered' : '')}>
     <svg
-      width="{size}"
-      height="{size}"
+      width={size}
+      height={size}
       viewBox="0 0 55 80"
       xmlns="http://www.w3.org/2000/svg"
       stroke="currentColor"
@@ -53,13 +59,3 @@
     </svg>
   </div>
 {/if}
-
-<script lang="ts">
-  export let isLoading: boolean = false;
-  export let size: number = 40;
-  export let centered: boolean = false;
-</script>
-
-<style lang="scss">
-@import './../base-loader/base-loader.scss';
-</style>

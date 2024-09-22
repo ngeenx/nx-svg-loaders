@@ -15,8 +15,6 @@
     "vitest.config.ts",
     "src/**/*.test.ts",
     "src/**/*.spec.ts",
-    "src/**/*.test.svelte",
-    "src/**/*.spec.svelte",
     "src/**/*.d.ts"
   ]
 }

@@ -5,7 +5,7 @@
 </script>
 
 {#if isLoading}
-  <div class={centered ? 'centered' : ''}>
+  <div class={'nx-svg-loader ' + (centered ? 'centered' : '')}>
     <svg
       width={size}
       height={size}
@@ -86,7 +86,3 @@
     </svg>
   </div>
 {/if}
-
-<style lang="scss">
-  @import './../base-loader/base-loader.scss';
-</style>
