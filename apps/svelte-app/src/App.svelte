@@ -81,4 +81,5 @@
 
 <style lang="scss">
   @import './../../../libs/utils/nx-svg-shared-utils/src/styles/app.component.scss';
+  @import './../../../libs/utils/nx-svg-shared-utils/src/styles/base-loader.component.scss';
 </style>
