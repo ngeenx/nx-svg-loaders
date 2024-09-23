@@ -1,4 +1,4 @@
-# nx-angular-loaders
+# nx-angular-svg-loaders
 
 [![SVG Loaders Preview](https://github.com/ngeenx/nx-svg-loaders/blob/main/docs/static/img/nx-svg-loaders-preview.gif?raw=true)](https://ngeenx.github.io/nx-svg-loaders/)
 
