@@ -1,4 +1,4 @@
-const sizes: number[] = [10, 15, 20, 25, 30, 25, 40, 50];
+const sizes: number[] = [10, 15, 20, 25, 30, 35, 40, 50];
 
 const loaderTypes: string[] = [
   "Audio",
