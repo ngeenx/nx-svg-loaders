@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # Usage
 
+## Import
+
 Import selected `Nx{SELECTED}Loader` component into your component or module and then use with `<Nx{SELECTED}Loader>` tag.
 
 ```js title="app.tsx"
@@ -27,6 +29,43 @@ const App = (props: IAppProps) => {
 
       {/* ... */}
     </>
+  );
+};
+```
+
+## Coloring
+
+You can set custom color to the loader by passing `style.color` prop to the loader component or any parent element.
+SVG loader will inherit the color from the parent element with `currentColor` value.
+
+```js title="app.tsx"
+// highlight-next-line
+import { NxOvalLoader } from "@ngeenx/nx-react-svg-loaders";
+
+const App = (props: IAppProps) => {
+  // ...
+
+  // highlight-next-line
+  const [isLoading, setIsLoading] = useState(true);
+
+  return (
+    <>
+      {/* ... */}
+
+      // highlight-next-line
+      <NxOvalLoader isLoading={isLoading} size={40} style={{ color: 'orange' }}/>
+
+      {/* or */}
+
+      // highlight-next-line
+      <div style={{ color: 'orange' }}>
+        // highlight-next-line
+        <NxOvalLoader isLoading={isLoading} size={40} />
+      // highlight-next-line
+      </div>
+
+      {/* ... */}
+    </div>
   );
 };
 ```
