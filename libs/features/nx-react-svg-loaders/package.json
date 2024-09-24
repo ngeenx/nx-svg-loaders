@@ -18,6 +18,10 @@
     "type": "git",
     "url": "git@github.com:ngeenx/nx-svg-loaders.git"
   },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
   "main": "./index.js",
   "types": "./index.d.ts",
   "exports": {
