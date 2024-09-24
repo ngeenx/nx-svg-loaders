@@ -23,6 +23,7 @@
   },
   "main": "./src/index.ts",
   "files": [
+    "CHANGELOG.md",
     "./src",
     "!./src/**/*.test.*",
     "!./src/**/*.spec.*"

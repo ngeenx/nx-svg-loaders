@@ -13,6 +13,9 @@
   },
   "tags": [],
   "targets": {
+    "npm-pack-prepare": {
+      "command": "mkdir .\\dist\\libs\\features\\nx-svelte-svg-loaders"
+    },
     "npm-pack": {
       "command": "npm pack ./libs/features/nx-svelte-svg-loaders --pack-destination ./dist/libs/features/nx-svelte-svg-loaders"
     },
