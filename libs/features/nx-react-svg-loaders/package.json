@@ -28,6 +28,10 @@
     ".": {
       "import": "./index.mjs",
       "require": "./index.js"
+    },
+    "./styles.css": {
+      "import": "./styles.css",
+      "require": "./styles.css"
     }
   }
 }
