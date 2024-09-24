@@ -1,11 +1,11 @@
 <script lang="ts">
   export let isLoading: boolean = false;
   export let size: number = 40;
-  export let centered: boolean = false;
+  export let isCentered: boolean = false;
 </script>
 
 {#if isLoading}
-  <div class={'nx-svg-loader ' + (centered ? 'centered' : '')}>
+  <div class={'nx-svg-loader ' + (isCentered ? 'centered' : '')}>
     <svg
       width={size}
       height={size}

@@ -5,7 +5,7 @@ export function NxGridLoader(props: IBaseLoaderProps) {
   return (
     props.isLoading && (
       <div
-        className={'nx-svg-loader ' + (props.centered ? 'centered' : '')}
+        className={'nx-svg-loader ' + (props.isCentered ? 'centered' : '')}
         style={props.style}
       >
         <svg

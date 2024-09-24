@@ -18,5 +18,5 @@ export class NxBaseLoaderComponent {
   public color?: string | null = null;
 
   @Input()
-  public centered? = true;
+  public isCentered? = true;
 }

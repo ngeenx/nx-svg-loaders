@@ -1,5 +1,5 @@
 <template>
-  <div v-if="props.isLoading" :class="{ centered: props.centered }">
+  <div v-if="props.isLoading" :class="{ centered: props.isCentered }">
     <svg
       :width="props.size"
       :height="props.size"
