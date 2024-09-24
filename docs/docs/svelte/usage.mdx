@@ -56,3 +56,28 @@ SVG loader will inherit the color from the parent element with `currentColor` va
   <!-- ... -->
 </div>
 ```
+
+## Alignment
+
+You can set horizontal alignment to the loader by passing `isCentered` prop to the loader component.
+
+First you need to import the styles in your `styles.scss` or `App.tsx` file (also see source code of the **[styles.css](https://github.com/ngeenx/nx-svg-loaders/blob/main/libs/utils/nx-svg-shared-utils/src/styles/base-loader.component.scss)**).
+
+
+```css title="app.css"
+...
+
+// highlight-next-line
+@import "@ngeenx/nx-svelte-svg-loaders/styles.css";
+
+...
+```
+
+Then you can use the `isCentered` prop in your component.
+
+```js title="app.svelte"
+<div>
+  // highlight-next-line
+  <NxHeartsLoader isLoading={true} size={100} isCentered={true} />
+</div>
+```

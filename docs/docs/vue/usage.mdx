@@ -89,3 +89,23 @@ SVG loader will inherit the color from the parent element with `currentColor` va
   </div>
 </template>
 ```
+
+## Alignment
+
+You can set horizontal alignment to the loader by passing `isCentered` prop to the loader component.
+
+First you need to import the styles in your `styles.scss` or `App.vue` file (also see source code of the **[styles.css](https://github.com/ngeenx/nx-svg-loaders/blob/main/libs/utils/nx-svg-shared-utils/src/styles/base-loader.component.scss)**).
+
+```js title="App.vue"
+<template>
+  <div>
+    // highlight-next-line
+    <NxOvalLoader :isLoading="isLoading" :size="40" :isCentered="true"/>
+  </div>
+</template>
+
+<style scoped>
+// highlight-next-line
+@import "@ngeenx/nx-vue-svg-loaders/styles.css";
+</style>
+```
