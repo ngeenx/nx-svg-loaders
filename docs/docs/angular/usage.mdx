@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # Usage
 
+## Import
+
 Import selected `Nx{SELECTED}LoaderComponent` component into your standalone component or module and then use with `<nx-angular-svg-{SELECT}-loader>` tag.
 
 ```js title="app.component.ts"
@@ -45,5 +47,23 @@ export class AppComponent {
 // highlight-next-line
 <nx-angular-svg-oval-loader [isLoading]="isLoading" [size]="40" />
 
+...
+```
+
+## Coloring
+
+You can set custom color to the loader by passing `style.color` prop to the loader component or any parent element.
+SVG loader will inherit the color from the parent element with `currentColor` value.
+
+```html title="app.component.html"
+...
+
+// highlight-next-line
+<nx-angular-svg-oval-loader [isLoading]="isLoading" [size]="40" [style]="{ color: 'orange' }" />
+
+<!-- or -->
+
+// highlight-next-line
+<nx-angular-svg-oval-loader [isLoading]="isLoading" [size]="40" class="text-orange-500"/>
 ...
 ```
