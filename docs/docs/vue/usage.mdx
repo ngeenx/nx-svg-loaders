@@ -7,6 +7,8 @@ import TabItem from '@theme/TabItem';
 
 # Usage
 
+## Import
+
 Import selected `Nx{SELECTED}Loader` component into your component or module and then use with `<Nx{SELECTED}Loader>` tag.
 
 <Tabs>
@@ -68,3 +70,22 @@ const isLoading = ref(true);
 ```
   </TabItem>
 </Tabs>
+
+## Coloring
+
+You can set custom color to the loader by passing `style.color` prop to the loader component or any parent element.
+SVG loader will inherit the color from the parent element with `currentColor` value.
+
+```html title="app.vue"
+<template>
+  <div>
+    // highlight-next-line
+    <NxOvalLoader :isLoading="isLoading" :size="40" :style="{ color: 'orange' }" />
+
+    <!-- or -->
+
+    // highlight-next-line
+    <NxOvalLoader :isLoading="isLoading" :size="40" class="text-orange-500" />
+  </div>
+</template>
+```
