@@ -4,7 +4,10 @@ import '../../../../../../utils/nx-svg-shared-utils/src/styles/base-loader.compo
 export function NxGridLoader(props: IBaseLoaderProps) {
   return (
     props.isLoading && (
-      <div className={'nx-svg-loader ' + (props.centered ? 'centered' : '')}>
+      <div
+        className={'nx-svg-loader ' + (props.centered ? 'centered' : '')}
+        style={props.style}
+      >
         <svg
           width={props.size}
           height={props.size}
