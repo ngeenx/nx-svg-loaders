@@ -7,6 +7,8 @@ import TabItem from '@theme/TabItem';
 
 # Usage
 
+## Import
+
 Import selected `Nx{SELECTED}Loader` component into your component or module and then use with `<Nx{SELECTED}Loader>` tag.
 
 ```js title="app.svelte"
@@ -32,4 +34,25 @@ Import selected `Nx{SELECTED}Loader` component into your component or module and
 <style lang="scss">
   // ...
 </style>
+```
+
+## Coloring
+
+You can set custom color to the loader by passing `style.color` prop to the loader component or any parent element.
+SVG loader will inherit the color from the parent element with `currentColor` value.
+
+```js title="app.svelte"
+<div>
+  <!-- ... -->
+
+  // highlight-next-line
+  <NxOvalLoader {isLoading} size={40} style="color: orange" />
+
+  <!-- or -->
+
+  // highlight-next-line
+  <NxOvalLoader {isLoading} size={40} class="text-orange-500" />
+
+  <!-- ... -->
+</div>
 ```
