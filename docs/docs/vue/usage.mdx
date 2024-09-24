@@ -58,22 +58,8 @@ import { ref } from 'vue';
 // highlight-next-line
 import { NxOvalLoader } from '@ngeenx/nx-vue-svg-loaders';
 
-export default {
-  components: {
-    // highlight-next-line
-    NxOvalLoader,
-  },
-
-  setup() {
-    // highlight-next-line
-    const isLoading = ref(true);
-
-    return {
-      // highlight-next-line
-      isLoading,
-    };
-  },
-};
+// highlight-next-line
+const isLoading = ref(true);
 </script>
 
 <style scoped lang="scss">
