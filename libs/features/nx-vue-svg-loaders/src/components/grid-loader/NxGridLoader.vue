@@ -1,5 +1,9 @@
 <template>
-  <div v-if="props.isLoading" :class="{ centered: props.isCentered }">
+  <div
+    v-if="props.isLoading"
+    class="nx-svg-loader"
+    :class="{ centered: props.isCentered }"
+  >
     <svg
       :width="props.size"
       :height="props.size"
