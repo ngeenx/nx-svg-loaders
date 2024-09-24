@@ -32,6 +32,10 @@
     ".": {
       "import": "./src/index.ts",
       "require": "./src/index.ts"
+    },
+    "./styles.css": {
+      "import": "./src/styles.css",
+      "require": "./src/styles.css"
     }
   }
 }
