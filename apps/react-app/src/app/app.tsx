@@ -18,6 +18,7 @@ import {
   NxThreeDotsLoader,
 } from '@ngeenx/nx-react-svg-loaders';
 
+// eslint-disable-next-line @nx/enforce-module-boundaries
 import '/libs/utils/nx-svg-shared-utils/src/styles/app.component.scss';
 
 export function App() {
