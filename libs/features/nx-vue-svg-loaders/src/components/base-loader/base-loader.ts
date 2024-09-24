@@ -2,7 +2,7 @@ interface IBaseLoaderProps {
   isLoading: boolean;
   size: number;
   color?: string | null;
-  centered?: boolean;
+  isCentered?: boolean;
 }
 
 export type { IBaseLoaderProps };
