@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from 'react';
 
 import { sizes, loaderTypes } from '@ngeenx/nx-svg-shared-utils';
@@ -18,7 +17,6 @@ import {
   NxThreeDotsLoader,
 } from '@ngeenx/nx-react-svg-loaders';
 
-// eslint-disable-next-line @nx/enforce-module-boundaries
 import '/libs/utils/nx-svg-shared-utils/src/styles/app.component.scss';
 
 export function App() {
