@@ -21,12 +21,22 @@
   "main": "./index.js",
   "types": "./index.d.ts",
   "files": [
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "./components",
+    "./index.js",
+    "./index.mjs",
+    "./index.d.ts",
+    "./styles.css"
   ],
   "exports": {
     ".": {
       "import": "./index.mjs",
-      "require": "./index.js"
+      "require": "./index.js",
+      "types": "./index.d.ts"
+    },
+    "./styles.css": {
+      "import": "./styles.css",
+      "require": "./styles.css"
     }
   }
 }

@@ -62,5 +62,5 @@ const props = defineProps<IBaseLoaderProps>();
 </script>
 
 <style scoped lang="scss">
-@import '../base-loader/base-loader.scss';
+@import '../../../../../utils/nx-svg-shared-utils/src/styles/base-loader.component.scss';
 </style>
