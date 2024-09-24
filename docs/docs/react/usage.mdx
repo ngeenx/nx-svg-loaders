@@ -58,11 +58,7 @@ const App = (props: IAppProps) => {
       {/* or */}
 
       // highlight-next-line
-      <div style={{ color: 'orange' }}>
-        // highlight-next-line
-        <NxOvalLoader isLoading={isLoading} size={40} />
-      // highlight-next-line
-      </div>
+      <NxOvalLoader isLoading={isLoading} size={40} className="text-orange-500"/>
 
       {/* ... */}
     </div>
