@@ -19,8 +19,8 @@
     "url": "git@github.com:ngeenx/nx-svg-loaders.git"
   },
   "peerDependencies": {
-    "@angular/common": "^18.2.0",
-    "@angular/core": "^18.2.0"
+    "@angular/common": "*",
+    "@angular/core": "*"
   },
   "sideEffects": false
 }
