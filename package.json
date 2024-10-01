@@ -113,7 +113,7 @@
     "vite-tsconfig-paths": "^5.0.1",
     "vue": "^3.5.8",
     "vue-router": "^4.4.5",
-    "zone.js": "~0.15.0"
+    "zone.js": "~0.14.10"
   },
   "nx": {
     "includedScripts": []
