@@ -33,4 +33,12 @@ export default defineConfig({
       transformMixedEsModules: true,
     },
   },
+
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: "modern",
+      },
+    },
+  },
 });

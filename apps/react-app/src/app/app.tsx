@@ -24,13 +24,13 @@ export function App() {
     <main>
       <header>React SVG Loaders</header>
 
-      {loaderTypes.map((loaderType, index) => (
-        <section key={index}>
+      {loaderTypes.map((loaderType) => (
+        <section key={loaderType}>
           <h1>{loaderType} Loaders</h1>
 
           <div>
-            {sizes.map((size, sizeIndex) => (
-              <React.Fragment key={sizeIndex}>
+            {sizes.map((size) => (
+              <React.Fragment key={size}>
                 {loaderType === 'Audio' && (
                   <NxAudioLoader isLoading={true} size={size} />
                 )}

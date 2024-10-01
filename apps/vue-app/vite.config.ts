@@ -46,4 +46,12 @@ export default defineConfig({
       provider: "v8",
     },
   },
+
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: "modern",
+      },
+    },
+  },
 });

@@ -7,7 +7,7 @@ main {
   }
 
   section {
-    @apply flex flex-col gap-y-3 border-[1.5px] border-dashed
+    @apply flex flex-col gap-y-3 border-[1.5px] border-dashed px-3 pt-3
         border-gray-400/60 p-2 rounded-lg text-center
         transition-all duration-200 ease-in-out;
 
@@ -20,7 +20,7 @@ main {
     }
 
     div {
-      @apply flex flex-row gap-3 items-center;
+      @apply flex flex-row h-full gap-3 items-center;
     }
   }
 }
