@@ -10,7 +10,7 @@ Use the following steps to use the Nx React SVG Loaders in your React project.
 
 Import selected `Nx{SELECTED}Loader` component into your component or module and then use with `<Nx{SELECTED}Loader>` tag.
 
-```js title="app.tsx"
+```tsx title="app.tsx"
 import { useState } from "react";
 
 // highlight-next-line
@@ -40,7 +40,7 @@ const App = (props: IAppProps) => {
 You can set custom color to the loader by passing `style.color` prop to the loader component or any parent element.
 SVG loader will inherit the color from the parent element with `currentColor` value.
 
-```js title="app.tsx"
+```tsx title="app.tsx"
 // highlight-next-line
 import { NxOvalLoader } from "@ngeenx/nx-react-svg-loaders";
 
@@ -74,7 +74,7 @@ You can set horizontal alignment to the loader by passing `isCentered` prop to t
 
 First you need to import the styles in your `styles.scss` or `App.svelte` file (also see source code of the **[styles.css](https://github.com/ngeenx/nx-svg-loaders/blob/main/libs/utils/nx-svg-shared-utils/src/styles/base-loader.component.scss)**).
 
-```js title="App.tsx"
+```tsx title="App.tsx"
 ...
 
 // highlight-next-line

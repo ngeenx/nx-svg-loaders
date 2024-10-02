@@ -13,7 +13,7 @@ Use the following steps to use the Nx Svelte SVG Loaders in your Svelte project.
 
 Import selected `Nx{SELECTED}Loader` component into your component or module and then use with `<Nx{SELECTED}Loader>` tag.
 
-```js title="app.svelte"
+```html title="app.svelte"
 <script lang="ts">
   // highlight-next-line
   import { NxOvalLoader } from '@ngeenx/nx-svelte-svg-loaders';
@@ -43,7 +43,7 @@ Import selected `Nx{SELECTED}Loader` component into your component or module and
 You can set custom color to the loader by passing `style.color` prop to the loader component or any parent element.
 SVG loader will inherit the color from the parent element with `currentColor` value.
 
-```js title="app.svelte"
+```html title="app.svelte"
 <div>
   <!-- ... -->
 
@@ -77,7 +77,7 @@ First you need to import the styles in your `styles.scss` or `App.tsx` file (als
 
 Then you can use the `isCentered` prop in your component.
 
-```js title="app.svelte"
+```html title="app.svelte"
 <div>
   // highlight-next-line
   <NxHeartsLoader isLoading={true} size={100} isCentered={true} />
