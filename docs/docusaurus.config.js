@@ -10,7 +10,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 const config = {
   title: 'nx-svg-loaders | NGEENX',
   tagline: 'SVG loaders for everyone',
-  favicon: 'img/favicon.ico',
+  favicon: 'https://fav.farm/🌀',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
