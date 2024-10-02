@@ -1,6 +1,6 @@
 {
   "name": "@ngeenx/nx-vue-svg-loaders",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue SVG Loaders",
   "keywords": [
     "vue",
@@ -17,6 +17,9 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:ngeenx/nx-svg-loaders.git"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
   },
   "main": "./index.js",
   "types": "./index.d.ts",
