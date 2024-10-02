@@ -12,7 +12,9 @@ Please check the **[documentation](https://ngeenx.github.io/nx-svg-loaders/)** f
 
 Supported Frameworks:
 
-- Angular: [Docs](https://ngeenx.github.io/nx-svg-loaders/docs/category/angular) / [Live Demo](https://stackblitz.com/edit/nx-angular-svg-loaders-demo)
-- [React](https://ngeenx.github.io/nx-svg-loaders/docs/category/react)
-- [Svelte](https://ngeenx.github.io/nx-svg-loaders/docs/category/svelte)
-- [Vue](https://ngeenx.github.io/nx-svg-loaders/docs/category/vue)
+| Framework | Docs | Live Demo |
+|---|---|---|
+| Angular | [Docs](https://ngeenx.github.io/nx-svg-loaders/docs/category/angular) | [Stackblitz](https://stackblitz.com/edit/nx-angular-svg-loaders-demo) |
+| React | [Docs](https://ngeenx.github.io/nx-svg-loaders/docs/category/react) | [Stackblitz](https://stackblitz.com/edit/nx-react-svg-loaders-demo) |
+| Svelte | [Docs](https://ngeenx.github.io/nx-svg-loaders/docs/category/svelte) | [Stackblitz](https://stackblitz.com/edit/nx-svelte-svg-loaders-demo) |
+| Vue | [Docs](https://ngeenx.github.io/nx-svg-loaders/docs/category/vue) | [Stackblitz](https://stackblitz.com/edit/nx-vue-svg-loaders-demo) |
