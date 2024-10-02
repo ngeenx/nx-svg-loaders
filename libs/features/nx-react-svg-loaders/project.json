@@ -23,7 +23,7 @@
       }
     },
     "tailwind-build": {
-      "command": "npx tailwindcss -i ./libs/utils/nx-svg-shared-utils/src/styles/base-loader.component.scss -o ./dist/libs/features/nx-react-svg-loaders/styles.css"
+      "command": "npx tailwindcss -i ./libs/utils/nx-svg-shared-utils/src/styles/base-loader.component.scss -o ./dist/libs/features/nx-react-svg-loaders/styles.css --minify"
     }
   }
 }
