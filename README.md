@@ -1,6 +1,8 @@
 # nx-svg-loaders
 
-[![SVG Loaders Preview](https://github.com/ngeenx/nx-svg-loaders/blob/main/docs/static/img/nx-svg-loaders-preview.gif?raw=true)](https://ngeenx.github.io/nx-svg-loaders/)
+<a href="https://ngeenx.github.io/nx-svg-loaders/" target="_blank">
+  <img src="https://github.com/ngeenx/nx-svg-loaders/blob/main/docs/static/img/nx-svg-loaders-preview.gif?raw=true" style="border-radius: 5px;"/>
+</a>
 
 This repository is based on [Sam Herbert](https://github.com/SamHerbert)'s [SVG-Loaders](https://github.com/SamHerbert/SVG-Loaders) project. There are many loadig indicator display strategy like *JS, CSS, GIF, Lottie and Custom Fonts*. **SVG** is another loading indicator/spinner option because it's supporting animations natively on browsers and [widely supporting](https://caniuse.com/svg-smil). This project aims to provide ready-to-use SVG loader examples as components in *Angular, React, Vue, Svelte* without broke your development environment experience.
 
