@@ -30,9 +30,10 @@
 }
 
 .preview-image {
-  border: '1px solid #dcdcdc';
-  borderradius: '5px';
-  minheight: '500px';
-  width: '100%';
-  backgroundcolor: '#f4f4f48a';
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  minheight: 500px;
+  width: 100%;
+  backgroundcolor: #f4f4f48a;
+  padding: 10px;
 }
