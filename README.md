@@ -10,7 +10,7 @@ This repository is based on [Sam Herbert](https://github.com/SamHerbert)'s [SVG-
 
 Please check the **[documentation](https://ngeenx.github.io/nx-svg-loaders/)** for installation and usage.
 
-Supported Frameworks:
+## Supported frameworks
 
 | Framework | Docs | Live Demo | Live Demo Source |
 |---|---|---|---|
