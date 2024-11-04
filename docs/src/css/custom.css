@@ -28,3 +28,11 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.preview-image {
+  border: '1px solid #dcdcdc';
+  borderradius: '5px';
+  minheight: '500px';
+  width: '100%';
+  backgroundcolor: '#f4f4f48a';
+}
