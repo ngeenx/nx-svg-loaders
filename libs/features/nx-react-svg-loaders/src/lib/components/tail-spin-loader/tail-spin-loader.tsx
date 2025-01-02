@@ -24,22 +24,22 @@ export function NxTailSpinLoader(props: IBaseLoaderProps) {
               y2="23.865%"
               id="a"
             >
-              <stop stop-color="currentColor" stop-opacity="0" offset="0%" />
+              <stop stopColor="currentColor" stopOpacity="0" offset="0%" />
               <stop
-                stop-color="currentColor"
-                stop-opacity=".631"
+                stopColor="currentColor"
+                stopOpacity=".631"
                 offset="63.146%"
               />
-              <stop stop-color="currentColor" offset="100%" />
+              <stop stopColor="currentColor" offset="100%" />
             </linearGradient>
           </defs>
-          <g fill="none" fill-rule="evenodd">
+          <g fill="none" fillRule="evenodd">
             <g transform="translate(1 1)">
               <path
                 d="M36 18c0-9.94-8.06-18-18-18"
                 id="Oval-2"
                 stroke="url(#a)"
-                stroke-width="2"
+                strokeWidth="2"
               >
                 <animateTransform
                   attributeName="transform"
